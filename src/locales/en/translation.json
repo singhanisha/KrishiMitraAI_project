@@ -1,0 +1,111 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "resources": "Resources",
+    "contact": "Contact Us",
+    "login": "Login"
+  },
+
+  "hero": {
+    "title": "Smart Farming, Better Tomorrow",
+    "description": "Your AI-powered agricultural companion for smarter crop decisions, disease detection, soil analysis, weather insights and more.",
+    "exploreServices": "Explore Services",
+    "askAssistant": "Ask AI Assistant",
+    "aiPowered": "AI-Powered",
+    "multilingual": "Multilingual",
+    "farmerFirst": "Farmer First"
+  },
+
+  "services": {
+    "title": "Our Smart Services",
+    "subtitle": "Everything you need for successful farming, in one place",
+
+    "cropRecommendation": {
+      "title": "Crop Recommendation",
+      "description": "Get AI-based crop suggestions based on soil and climate conditions.",
+      "button": "Get Recommendation"
+    },
+
+    "diseaseDetection": {
+      "title": "Disease Detection",
+      "description": "Upload leaf images and detect diseases early with AI.",
+      "button": "Detect Now"
+    },
+
+    "soilAnalysis": {
+      "title": "Soil Analysis",
+      "description": "Analyze your soil health and get improvement tips.",
+      "button": "Analyze Soil"
+    },
+
+    "weather": {
+      "title": "Weather Forecast",
+      "description": "Get weather updates and forecasts for your location.",
+      "button": "View Forecast"
+    },
+
+    "irrigation": {
+      "title": "Irrigation Advisory",
+      "description": "Get smart irrigation advice to save water and improve crop productivity.",
+      "button": "Get Advice"
+    },
+
+    "yieldPrediction": {
+      "title": "Yield Prediction",
+      "description": "Predict your crop yield using AI models and historical data.",
+      "button": "Predict Yield"
+    },
+
+    "marketPrices": {
+      "title": "Market Prices",
+      "description": "Check current mandi prices and market trends.",
+      "button": "Check Prices"
+    },
+
+    "aiAssistant": {
+      "title": "AI Assistant",
+      "description": "Ask anything about farming in your language.",
+      "button": "Chat Now"
+    }
+  },
+
+  "insights": {
+    "title": "Insights & Tips for Farmers",
+    "subtitle": "Helpful information to improve your farming",
+
+    "soil": {
+      "title": "Improve Soil Health",
+      "description": "Add organic matter and balanced nutrients regularly.",
+      "button": "Read More"
+    },
+
+    "disease": {
+      "title": "Early Disease Detection",
+      "description": "Detect diseases early to protect your crops.",
+      "button": "Read More"
+    },
+
+    "water": {
+      "title": "Water Management",
+      "description": "Use water wisely and improve crop productivity.",
+      "button": "Read More"
+    }
+  },
+
+  "assistant": {
+    "title": "Have Questions? Ask KrishiMitra AI",
+    "description": "Your AI Assistant is ready to help you in your language.",
+    "chatEnglish": "Chat in English",
+    "chatHindi": "हिंदी में पूछें",
+    "chatMarathi": "मराठी में विचारें"
+  },
+
+  "stats": {
+    "services": "AI-Powered Services",
+    "languages": "Supported Languages",
+    "models": "Intelligent Models",
+    "platform": "Unified Platform"
+  }
+}
