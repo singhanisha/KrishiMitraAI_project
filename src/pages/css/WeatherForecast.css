@@ -1,0 +1,418 @@
+.weather-page {
+min-height: 100vh;
+padding: 100px 20px 60px;
+background:
+linear-gradient(
+135deg,
+rgba(245, 255, 240, 0.95),
+rgba(232, 247, 230, 0.95)
+);
+}
+
+.weather-container {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/* ================= HEADER ================= */
+
+.weather-header {
+text-align: center;
+margin-bottom: 35px;
+}
+
+.weather-header h1 {
+font-size: 42px;
+font-weight: 700;
+color: #1f4d2e;
+margin: 12px 0;
+}
+
+.weather-header p {
+font-size: 17px;
+color: #6b7280;
+max-width: 600px;
+margin: auto;
+line-height: 1.6;
+}
+
+.weather-badge {
+display: inline-flex;
+align-items: center;
+gap: 7px;
+padding: 7px 14px;
+border-radius: 50px;
+background: #e5f5e0;
+color: #2f7d32;
+font-size: 14px;
+font-weight: 600;
+}
+
+/* ================= SEARCH ================= */
+
+.weather-search {
+display: flex;
+align-items: center;
+gap: 12px;
+background: white;
+padding: 14px;
+border-radius: 16px;
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+margin-bottom: 30px;
+}
+
+.search-input-wrapper {
+flex: 1;
+display: flex;
+align-items: center;
+gap: 10px;
+background: #f6f8f5;
+padding: 13px 16px;
+border-radius: 10px;
+}
+
+.search-input-wrapper svg {
+color: #4a7c59;
+}
+
+.search-input-wrapper input {
+width: 100%;
+border: none;
+outline: none;
+background: transparent;
+font-size: 16px;
+color: #333;
+}
+
+.search-btn,
+.location-btn {
+border: none;
+cursor: pointer;
+font-size: 15px;
+font-weight: 600;
+transition: 0.3s ease;
+}
+
+.search-btn {
+padding: 13px 24px;
+border-radius: 10px;
+background: #2f7d32;
+color: white;
+}
+
+.search-btn:hover {
+background: #256428;
+transform: translateY(-2px);
+}
+
+.location-btn {
+display: flex;
+align-items: center;
+gap: 7px;
+padding: 13px 18px;
+border-radius: 10px;
+background: #f0f7ed;
+color: #2f7d32;
+}
+
+.location-btn:hover {
+background: #dfeeda;
+}
+
+/* ================= STATUS ================= */
+
+.weather-status {
+padding: 14px 20px;
+border-radius: 10px;
+margin-bottom: 20px;
+text-align: center;
+font-weight: 500;
+}
+
+.weather-status.loading {
+background: #fff8dc;
+color: #9a7b00;
+}
+
+.weather-status.error {
+background: #ffe5e5;
+color: #c62828;
+}
+
+/* ================= CURRENT WEATHER ================= */
+
+.current-weather-card {
+position: relative;
+overflow: hidden;
+padding: 35px;
+border-radius: 24px;
+background:
+linear-gradient(
+135deg,
+#2f7d32,
+#4fa653
+);
+color: white;
+box-shadow: 0 15px 40px rgba(47, 125, 50, 0.25);
+margin-bottom: 45px;
+}
+
+.current-weather-card::before {
+content: "";
+position: absolute;
+width: 300px;
+height: 300px;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.08);
+top: -120px;
+right: -80px;
+}
+
+.weather-main {
+position: relative;
+z-index: 2;
+}
+
+.weather-location {
+display: flex;
+align-items: center;
+gap: 8px;
+font-size: 18px;
+font-weight: 600;
+}
+
+.temperature-section {
+margin-top: 20px;
+}
+
+.temperature {
+font-size: 80px;
+font-weight: 700;
+line-height: 1;
+}
+
+.celsius {
+font-size: 30px;
+font-weight: 500;
+}
+
+.weather-description {
+text-transform: capitalize;
+margin-top: 10px;
+font-size: 18px;
+opacity: 0.9;
+}
+
+.weather-icon-large {
+position: absolute;
+top: 20px;
+right: 40px;
+z-index: 2;
+}
+
+.weather-icon-large img {
+width: 160px;
+}
+
+/* ================= WEATHER DETAILS ================= */
+
+.weather-details-grid {
+position: relative;
+z-index: 2;
+margin-top: 35px;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 15px;
+}
+
+.weather-detail {
+display: flex;
+align-items: center;
+gap: 12px;
+padding: 16px;
+border-radius: 14px;
+background: rgba(255, 255, 255, 0.13);
+backdrop-filter: blur(8px);
+}
+
+.weather-detail svg {
+width: 24px;
+height: 24px;
+}
+
+.weather-detail span {
+display: block;
+font-size: 13px;
+opacity: 0.8;
+}
+
+.weather-detail strong {
+display: block;
+margin-top: 4px;
+font-size: 18px;
+}
+
+/* ================= FORECAST ================= */
+
+.forecast-section {
+margin-top: 30px;
+}
+
+.forecast-heading {
+margin-bottom: 25px;
+}
+
+.forecast-heading h2 {
+font-size: 30px;
+color: #1f4d2e;
+margin: 12px 0 6px;
+}
+
+.forecast-heading p {
+color: #6b7280;
+}
+
+.forecast-grid {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 18px;
+}
+
+.forecast-card {
+text-align: center;
+background: white;
+padding: 22px 15px;
+border-radius: 18px;
+border: 1px solid #edf1ec;
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+transition: 0.3s ease;
+}
+
+.forecast-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 28px rgba(47, 125, 50, 0.15);
+}
+
+.forecast-day {
+font-weight: 600;
+color: #2f7d32;
+}
+
+.forecast-card img {
+width: 75px;
+margin: 8px 0;
+}
+
+.forecast-temp {
+font-size: 24px;
+font-weight: 700;
+color: #222;
+}
+
+.forecast-description {
+font-size: 13px;
+color: #777;
+text-transform: capitalize;
+margin-top: 5px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+.weather-details-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.forecast-grid {
+grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media (max-width: 768px) {
+
+.weather-page {
+padding: 85px 15px 40px;
+}
+
+.weather-header h1 {
+font-size: 32px;
+}
+
+.weather-search {
+flex-direction: column;
+align-items: stretch;
+}
+
+.search-input-wrapper {
+width: 100%;
+box-sizing: border-box;
+}
+
+.search-btn,
+.location-btn {
+justify-content: center;
+width: 100%;
+}
+
+.current-weather-card {
+padding: 25px;
+}
+
+.temperature {
+font-size: 64px;
+}
+
+.weather-icon-large {
+top: 15px;
+right: 15px;
+}
+
+.weather-icon-large img {
+width: 120px;
+}
+
+.forecast-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 480px) {
+
+.weather-page {
+padding: 75px 12px 30px;
+}
+
+.weather-header h1 {
+font-size: 27px;
+}
+
+.weather-header p {
+font-size: 15px;
+}
+
+.current-weather-card {
+padding: 22px;
+}
+
+.weather-details-grid {
+grid-template-columns: 1fr;
+}
+
+.weather-icon-large {
+opacity: 0.5;
+}
+
+.forecast-grid {
+grid-template-columns: repeat(2, 1fr);
+gap: 12px;
+}
+
+.forecast-card {
+padding: 16px 10px;
+}
+
+.temperature {
+font-size: 58px;
+}
+}

@@ -1,0 +1,588 @@
+/* =========================================================
+   KRISHIMITRA AI — ABOUT PAGE
+   Fully Scoped Styles
+   Prefix: km-about-
+   ========================================================= */
+
+.km-about-page {
+  width: min(1440px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 24px 0 70px;
+  color: #24352b;
+}
+
+/* =========================================================
+   COMMON
+   ========================================================= */
+
+.km-about-section {
+  padding: 100px 25px 20px;
+}
+
+.km-about-heading {
+  max-width: 700px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.km-about-heading h2 {
+  color: #174a35;
+  font-size: clamp(30px, 3.4vw, 43px);
+  line-height: 1.15;
+  margin: 16px 0 13px;
+  letter-spacing: -0.035em;
+}
+
+.km-about-heading p {
+  color: #718078;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.km-about-label {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  gap: 8px;
+  color: #47715a;
+  background: #e4eee3;
+  border-radius: 100px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   STORY
+   ========================================================= */
+
+.km-about-story {
+  max-width: 1150px;
+  margin: 95px auto 0;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 70px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.km-about-story-image {
+  height: 530px;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #e8eee3;
+}
+
+.km-about-story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.km-about-story-content h2 {
+  color: #174a35;
+  font-size: clamp(31px, 3.5vw, 45px);
+  line-height: 1.15;
+  margin: 18px 0;
+  letter-spacing: -0.035em;
+}
+
+.km-about-story-content > p {
+  color: #6e7b73;
+  font-size: 15px;
+  line-height: 1.85;
+  margin-bottom: 15px;
+}
+
+.km-about-story-points {
+  margin-top: 28px;
+}
+
+.km-about-story-points > div {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+  border-top: 1px solid #e5e6df;
+}
+
+.km-about-story-points > div:last-child {
+  border-bottom: 1px solid #e5e6df;
+}
+
+.km-about-point-number {
+  color: #789b7d;
+  font-size: 12px;
+  font-weight: 800;
+  padding-top: 3px;
+}
+
+.km-about-story-points h4 {
+  color: #304b3a;
+  margin: 0 0 4px;
+  font-size: 14px;
+}
+
+.km-about-story-points p {
+  color: #7a867f;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   PURPOSE
+   ========================================================= */
+
+.km-about-purpose-grid {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.km-about-purpose-card {
+  position: relative;
+  padding: 30px;
+  min-height: 245px;
+  background: white;
+  border: 1px solid #e2e6df;
+  border-radius: 15px;
+  transition: 0.25s ease;
+}
+
+.km-about-purpose-card:hover {
+  border-color: #b8ccb8;
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(38, 65, 46, 0.08);
+}
+
+.km-about-purpose-icon {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  color: #37684d;
+  background: #e8f0e5;
+  border-radius: 10px;
+}
+
+.km-about-card-number {
+  position: absolute;
+  right: 25px;
+  top: 28px;
+  color: #d3ddd0;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.km-about-purpose-card h3 {
+  color: #294737;
+  font-size: 18px;
+  margin: 23px 0 10px;
+}
+
+.km-about-purpose-card p {
+  color: #758078;
+  font-size: 13px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.km-about-services-section {
+  background: #f7f5ed;
+  margin-top: 90px;
+  border-radius: 24px;
+  padding-bottom: 70px;
+}
+
+.km-about-services-grid {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.km-about-service-card {
+  overflow: hidden;
+  background: white;
+  border: 1px solid #e1e5dc;
+  border-radius: 15px;
+  transition: 0.25s ease;
+}
+
+.km-about-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(35, 60, 42, 0.09);
+}
+
+.km-about-service-image {
+  position: relative;
+  height: 175px;
+  background: #edf1e8;
+  overflow: hidden;
+}
+
+.km-about-service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.km-about-service-card:hover .km-about-service-image img {
+  transform: scale(1.04);
+}
+
+.km-about-service-icon {
+  position: absolute;
+  left: 16px;
+  bottom: 15px;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  color: #28553d;
+  background: white;
+  border-radius: 9px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+}
+
+.km-about-service-content {
+  padding: 22px;
+}
+
+.km-about-service-label {
+  color: #739078;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.km-about-service-content h3 {
+  color: #294737;
+  font-size: 18px;
+  margin: 9px 0;
+}
+
+.km-about-service-content p {
+  color: #758078;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.km-about-service-meta {
+  margin-top: 17px;
+  padding-top: 13px;
+  border-top: 1px solid #edf0ea;
+  color: #5d7764;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   FARMER SECTION
+   ========================================================= */
+
+.km-about-farmer-section {
+  margin-top: 100px;
+  padding: 80px 25px;
+  background: #e8f0e5;
+  border-radius: 24px;
+}
+
+.km-about-farmer-heading {
+  margin-bottom: 42px;
+}
+
+.km-about-farmer-grid {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.km-about-farmer-feature {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(84, 113, 91, 0.15);
+  border-radius: 15px;
+  padding: 28px;
+}
+
+.km-about-feature-icon {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  color: #356149;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.km-about-farmer-feature h3 {
+  color: #294737;
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.km-about-farmer-feature > p {
+  color: #6f7d74;
+  font-size: 13px;
+  line-height: 1.75;
+  margin: 0 0 20px;
+}
+
+.km-about-language-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.km-about-language-list span {
+  padding: 6px 9px;
+  background: white;
+  border: 1px solid #dce5d8;
+  border-radius: 7px;
+  color: #54705b;
+  font-size: 11px;
+}
+
+.km-about-feature-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #61746a;
+  font-size: 12px;
+  margin-top: 11px;
+}
+
+.km-about-small-check {
+  width: 19px;
+  height: 19px;
+  display: grid;
+  place-items: center;
+  background: #dcead9;
+  color: #3e704f;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* =========================================================
+   TECHNOLOGY
+   ========================================================= */
+
+.km-about-tech-grid {
+  max-width: 1050px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.km-about-tech-card {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  column-gap: 17px;
+  padding: 25px;
+  background: white;
+  border: 1px solid #e2e6df;
+  border-radius: 14px;
+}
+
+.km-about-tech-icon {
+  grid-row: span 2;
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  color: #356149;
+  background: #e8f0e5;
+  border-radius: 9px;
+}
+
+.km-about-tech-card h3 {
+  color: #304b3a;
+  font-size: 16px;
+  margin: 1px 0 7px;
+}
+
+.km-about-tech-card p {
+  color: #78847d;
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.km-about-cta {
+  max-width: 1150px;
+  margin: 100px auto 0;
+  padding: 42px 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background: #174a35;
+  border-radius: 20px;
+}
+
+.km-about-cta-label {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  color: #d6e8d8;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.km-about-cta h2 {
+  max-width: 650px;
+  color: white;
+  font-size: clamp(25px, 3vw, 37px);
+  line-height: 1.2;
+  margin: 15px 0 10px;
+}
+
+.km-about-cta p {
+  max-width: 620px;
+  color: #c5d5ca;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.km-about-cta-button {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 18px;
+  background: white;
+  color: #174a35;
+  text-decoration: none;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 800;
+  transition: 0.25s ease;
+}
+
+.km-about-cta-button:hover {
+  background: #edf3ea;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1050px) {
+  .km-about-story {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 750px;
+  }
+
+  .km-about-story-image {
+    height: 400px;
+  }
+
+  .km-about-purpose-grid,
+  .km-about-services-grid,
+  .km-about-farmer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .km-about-cta {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .km-about-page {
+    width: min(100% - 22px, 1440px);
+    padding-top: 12px;
+  }
+
+  .km-about-section {
+    padding-top: 75px;
+  }
+
+  .km-about-purpose-grid,
+  .km-about-services-grid,
+  .km-about-farmer-grid,
+  .km-about-tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .km-about-services-section {
+    margin-top: 65px;
+    padding: 60px 15px;
+  }
+
+  .km-about-farmer-section {
+    margin-top: 70px;
+    padding: 60px 15px;
+  }
+
+  .km-about-story {
+    margin-top: 65px;
+    padding: 0 5px;
+  }
+
+  .km-about-story-image {
+    height: 320px;
+  }
+
+  .km-about-cta {
+    margin-top: 70px;
+    padding: 32px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .km-about-cta-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .km-about-page {
+    width: min(100% - 16px, 1440px);
+  }
+
+  .km-about-story-image {
+    height: 290px;
+  }
+
+  .km-about-purpose-card,
+  .km-about-farmer-feature {
+    padding: 24px;
+  }
+
+  .km-about-cta {
+    padding: 28px 20px;
+  }
+}

@@ -465,8 +465,8 @@ a {
    COMMON SECTION
 ===================================================== */
 
-.services-section,
-.insights-section {
+.services-section-home,
+.insights-section-home {
   width: min(1200px, 90%);
 
   margin: auto;
@@ -474,13 +474,13 @@ a {
   padding: 80px 0;
 }
 
-.section-heading {
+.section-heading-home {
   text-align: center;
 
   margin-bottom: 45px;
 }
 
-.section-label {
+.section-label-home {
   font-size: 12px;
 
   letter-spacing: 2px;
@@ -490,7 +490,7 @@ a {
   color: #378049;
 }
 
-.section-heading h2 {
+.section-heading-home h2 {
   margin-top: 9px;
 
   font-size: 38px;
@@ -498,7 +498,7 @@ a {
   color: #193d25;
 }
 
-.section-heading p {
+.section-heading-home p {
   margin-top: 12px;
 
   color: #68736c;

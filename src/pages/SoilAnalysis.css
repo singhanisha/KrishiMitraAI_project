@@ -1,0 +1,986 @@
+.krishi-soil-1-page {
+  min-height: 100vh;
+  background: #f5f8f3;
+  color: #24352a;
+}
+
+/* ================================
+   COMMON
+================================ */
+
+.krishi-soil-1-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* ================================
+   HERO
+================================ */
+
+.krishi-soil-1-hero {
+  position: relative;
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      110deg,
+      rgba(18, 67, 39, 0.96),
+      rgba(41, 105, 64, 0.91),
+      rgba(74, 126, 71, 0.78)
+    );
+}
+
+.krishi-soil-1-hero::before {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  right: -170px;
+  top: -230px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.krishi-soil-1-hero::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: -130px;
+  bottom: -200px;
+  border-radius: 50%;
+  background: rgba(181, 221, 159, 0.1);
+}
+
+.krishi-soil-1-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.025)
+  );
+}
+
+.krishi-soil-1-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  padding: 65px 0;
+}
+
+.krishi-soil-1-badge {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 15px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.09);
+  color: #e5f4dc;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.krishi-soil-1-hero h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 1.05;
+  letter-spacing: -1.8px;
+  font-weight: 800;
+}
+
+.krishi-soil-1-hero h1 span {
+  display: block;
+  color: #c9e89e;
+}
+
+.krishi-soil-1-hero p {
+  max-width: 690px;
+  margin: 22px 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.krishi-soil-1-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.krishi-soil-1-hero-points div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 13px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #f3f8ef;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ================================
+   MAIN
+================================ */
+
+.krishi-soil-1-main {
+  padding: 55px 0 80px;
+}
+
+.krishi-soil-1-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 25px;
+  align-items: start;
+}
+
+/* ================================
+   FORM CARD
+================================ */
+
+.krishi-soil-1-form-card {
+  background: #ffffff;
+  border: 1px solid #e2eadf;
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: 0 12px 35px rgba(35, 70, 45, 0.07);
+}
+
+.krishi-soil-1-section-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #edf1eb;
+}
+
+.krishi-soil-1-heading-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: #eaf5e5;
+  color: #327447;
+}
+
+.krishi-soil-1-small-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #56835e;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.krishi-soil-1-section-heading h2,
+.krishi-soil-1-result-heading h2 {
+  margin: 0;
+  color: #23382a;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.krishi-soil-1-section-heading p {
+  margin: 7px 0 0;
+  color: #778379;
+  font-size: 14px;
+}
+
+/* ================================
+   FORM GROUPS
+================================ */
+
+.krishi-soil-1-form-group {
+  padding-top: 28px;
+}
+
+.krishi-soil-1-group-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.krishi-soil-1-group-title > span {
+  color: #34483a;
+  font-size: 15px;
+  font-weight: 750;
+}
+
+.krishi-soil-1-group-title small {
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: #f0f6ed;
+  color: #66816b;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.krishi-soil-1-input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.krishi-soil-1-input-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 8px;
+  color: #435248;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.krishi-soil-1-input-wrapper label span {
+  padding: 2px 6px;
+  border-radius: 5px;
+  background: #eef4eb;
+  color: #5c765f;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.krishi-soil-1-input-box {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  overflow: hidden;
+  border: 1px solid #d9e2d7;
+  border-radius: 10px;
+  background: #fbfcfa;
+  transition: 0.2s ease;
+}
+
+.krishi-soil-1-input-box:focus-within {
+  border-color: #5e9a68;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(83, 145, 94, 0.1);
+}
+
+.krishi-soil-1-input-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 13px;
+  background: transparent;
+  color: #25372b;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.krishi-soil-1-input-box input::placeholder {
+  color: #a5aea7;
+}
+
+.krishi-soil-1-input-box span {
+  flex-shrink: 0;
+  padding-right: 13px;
+  color: #7d8980;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* ================================
+   INFO / ERROR
+================================ */
+
+.krishi-soil-1-info-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+  padding: 13px 15px;
+  border: 1px solid #dcebd7;
+  border-radius: 10px;
+  background: #f5faf2;
+  color: #5e7161;
+}
+
+.krishi-soil-1-info-box svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: #5e9363;
+}
+
+.krishi-soil-1-info-box p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.krishi-soil-1-error-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 15px;
+  padding: 12px 14px;
+  border: 1px solid #f0cccc;
+  border-radius: 9px;
+  background: #fff5f5;
+  color: #a44747;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.krishi-soil-1-error-box svg {
+  flex-shrink: 0;
+}
+
+/* ================================
+   ACTION BUTTONS
+================================ */
+
+.krishi-soil-1-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.krishi-soil-1-reset-btn,
+.krishi-soil-1-analyze-btn {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 18px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.krishi-soil-1-reset-btn {
+  border: 1px solid #dce4da;
+  background: #ffffff;
+  color: #627067;
+}
+
+.krishi-soil-1-reset-btn:hover {
+  background: #f4f7f2;
+}
+
+.krishi-soil-1-analyze-btn {
+  border: none;
+  background: #367a48;
+  color: #ffffff;
+  box-shadow: 0 7px 18px rgba(54, 122, 72, 0.2);
+}
+
+.krishi-soil-1-analyze-btn:hover {
+  background: #2d693d;
+  transform: translateY(-1px);
+}
+
+.krishi-soil-1-analyze-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.krishi-soil-1-spinner {
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: krishi-soil-1-spin 0.7s linear infinite;
+}
+
+@keyframes krishi-soil-1-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ================================
+   SIDE CARD
+================================ */
+
+.krishi-soil-1-side-card {
+  position: sticky;
+  top: 95px;
+  padding: 27px;
+  border-radius: 20px;
+  background: #234d31;
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(32, 70, 44, 0.14);
+}
+
+.krishi-soil-1-side-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  background: rgba(201, 232, 158, 0.14);
+  color: #c9e89e;
+}
+
+.krishi-soil-1-side-card h3 {
+  margin: 0 0 10px;
+  font-size: 21px;
+}
+
+.krishi-soil-1-side-card > p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.krishi-soil-1-benefit-list {
+  margin-top: 25px;
+}
+
+.krishi-soil-1-benefit-list > div {
+  display: flex;
+  gap: 11px;
+  padding: 14px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.krishi-soil-1-benefit-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.09);
+  color: #c9e89e;
+}
+
+.krishi-soil-1-benefit-list strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.krishi-soil-1-benefit-list span {
+  display: block;
+  color: rgba(255, 255, 255, 0.63);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* ================================
+   RESULT
+================================ */
+
+.krishi-soil-1-result-section {
+  margin-top: 30px;
+  padding: 30px;
+  border: 1px solid #e0e9dc;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 12px 35px rgba(35, 70, 45, 0.07);
+}
+
+.krishi-soil-1-result-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #edf1eb;
+}
+
+.krishi-soil-1-result-heading p {
+  margin: 7px 0 0;
+  color: #778379;
+  font-size: 14px;
+}
+
+.krishi-soil-1-result-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: #eaf6e8;
+  color: #3e8650;
+}
+
+/* ================================
+   SCORE
+================================ */
+
+.krishi-soil-1-score-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 25px;
+  padding: 24px;
+  border-radius: 17px;
+  background: linear-gradient(105deg, #f0f8eb, #f7faf4);
+  border: 1px solid #deebd8;
+}
+
+.krishi-soil-1-score-circle {
+  width: 115px;
+  height: 115px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 7px solid #76a96e;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.krishi-soil-1-score-circle div {
+  text-align: center;
+}
+
+.krishi-soil-1-score-circle strong {
+  display: block;
+  color: #2f693e;
+  font-size: 31px;
+  line-height: 1;
+}
+
+.krishi-soil-1-score-circle span {
+  color: #819084;
+  font-size: 11px;
+}
+
+.krishi-soil-1-score-label {
+  color: #658069;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.krishi-soil-1-score-content h3 {
+  margin: 5px 0 7px;
+  color: #294832;
+  font-size: 22px;
+}
+
+.krishi-soil-1-score-content p {
+  max-width: 700px;
+  margin: 0;
+  color: #657267;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+/* ================================
+   RESULT BLOCK
+================================ */
+
+.krishi-soil-1-result-block {
+  margin-top: 28px;
+}
+
+.krishi-soil-1-result-block-heading,
+.krishi-soil-1-observation-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.krishi-soil-1-result-block-heading {
+  margin-bottom: 15px;
+}
+
+.krishi-soil-1-result-block-heading svg,
+.krishi-soil-1-observation-heading svg {
+  color: #4c8858;
+}
+
+.krishi-soil-1-result-block-heading h3,
+.krishi-soil-1-observation-heading h3 {
+  margin: 0;
+  color: #304436;
+  font-size: 17px;
+}
+
+/* ================================
+   PARAMETER CARDS
+================================ */
+
+.krishi-soil-1-parameter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.krishi-soil-1-parameter-card {
+  min-width: 0;
+  padding: 17px;
+  border: 1px solid #e3eae0;
+  border-radius: 14px;
+  background: #fbfcfa;
+}
+
+.krishi-soil-1-parameter-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+}
+
+.krishi-soil-1-parameter-top > span:first-child {
+  color: #5d6c61;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.krishi-soil-1-status-badge {
+  padding: 4px 7px;
+  border-radius: 999px;
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.krishi-soil-1-status-good {
+  background: #e7f5e5;
+  color: #397344;
+}
+
+.krishi-soil-1-status-warning {
+  background: #fff0df;
+  color: #9a652a;
+}
+
+.krishi-soil-1-status-neutral {
+  background: #edf1ed;
+  color: #667268;
+}
+
+.krishi-soil-1-parameter-value {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  margin: 17px 0 8px;
+}
+
+.krishi-soil-1-parameter-value strong {
+  color: #273a2c;
+  font-size: 25px;
+}
+
+.krishi-soil-1-parameter-value span {
+  color: #7c887e;
+  font-size: 10px;
+}
+
+.krishi-soil-1-parameter-card p {
+  min-height: 52px;
+  margin: 0;
+  color: #68756b;
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.krishi-soil-1-range {
+  margin-top: 11px;
+  padding-top: 9px;
+  border-top: 1px solid #e7ece5;
+  color: #879189;
+  font-size: 9px;
+}
+
+.krishi-soil-1-range strong {
+  color: #69766c;
+}
+
+/* ================================
+   NPK
+================================ */
+
+.krishi-soil-1-npk-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 25px;
+  padding: 20px;
+  border: 1px solid #dce9d8;
+  border-radius: 15px;
+  background: #f5faf2;
+}
+
+.krishi-soil-1-npk-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #e0efd9;
+  color: #4a8651;
+}
+
+.krishi-soil-1-npk-content h3 {
+  margin: 2px 0 4px;
+  color: #2d4933;
+  font-size: 20px;
+}
+
+.krishi-soil-1-npk-content > strong {
+  display: block;
+  color: #4d7954;
+  font-size: 12px;
+}
+
+.krishi-soil-1-npk-content p {
+  margin: 7px 0 0;
+  color: #68756b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* ================================
+   SUMMARY
+================================ */
+
+.krishi-soil-1-summary-card {
+  margin-top: 20px;
+  padding: 21px;
+  border: 1px solid #e4eae1;
+  border-radius: 15px;
+  background: #ffffff;
+}
+
+.krishi-soil-1-summary-card .krishi-soil-1-result-block-heading {
+  margin-bottom: 10px;
+}
+
+.krishi-soil-1-summary-card p {
+  margin: 0;
+  color: #657167;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+/* ================================
+   OBSERVATIONS / RISKS
+================================ */
+
+.krishi-soil-1-observation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.krishi-soil-1-observation-card,
+.krishi-soil-1-risk-card {
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.krishi-soil-1-observation-card {
+  border: 1px solid #dcebd8;
+  background: #f7fbf5;
+}
+
+.krishi-soil-1-risk-card {
+  border: 1px solid #f0dfc8;
+  background: #fffaf3;
+}
+
+.krishi-soil-1-observation-heading {
+  margin-bottom: 13px;
+}
+
+.krishi-soil-1-risk-card .krishi-soil-1-observation-heading svg {
+  color: #b17a35;
+}
+
+.krishi-soil-1-observation-card ul,
+.krishi-soil-1-risk-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.krishi-soil-1-observation-card li,
+.krishi-soil-1-risk-card li {
+  display: flex;
+  gap: 9px;
+  padding: 7px 0;
+  color: #657167;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.krishi-soil-1-observation-card li > span,
+.krishi-soil-1-risk-card li > span {
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  margin-top: 7px;
+  border-radius: 50%;
+  background: #659468;
+}
+
+.krishi-soil-1-risk-card li > span {
+  background: #c38b43;
+}
+
+/* ================================
+   DISCLAIMER
+================================ */
+
+.krishi-soil-1-disclaimer {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 14px 16px;
+  border-radius: 11px;
+  background: #f5f6f3;
+  color: #727c74;
+}
+
+.krishi-soil-1-disclaimer svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #78847a;
+}
+
+.krishi-soil-1-disclaimer strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #566259;
+  font-size: 11px;
+}
+
+.krishi-soil-1-disclaimer p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+  .krishi-soil-1-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .krishi-soil-1-side-card {
+    position: static;
+  }
+
+  .krishi-soil-1-parameter-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .krishi-soil-1-container {
+    width: min(100% - 24px, 600px);
+  }
+
+  .krishi-soil-1-hero {
+    min-height: auto;
+  }
+
+  .krishi-soil-1-hero-content {
+    padding: 50px 0;
+  }
+
+  .krishi-soil-1-hero h1 {
+    font-size: 38px;
+  }
+
+  .krishi-soil-1-hero p {
+    font-size: 14px;
+  }
+
+  .krishi-soil-1-main {
+    padding: 30px 0 55px;
+  }
+
+  .krishi-soil-1-form-card,
+  .krishi-soil-1-result-section {
+    padding: 20px;
+    border-radius: 17px;
+  }
+
+  .krishi-soil-1-input-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .krishi-soil-1-parameter-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .krishi-soil-1-observation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .krishi-soil-1-score-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .krishi-soil-1-result-heading {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .krishi-soil-1-result-icon {
+    width: 43px;
+    height: 43px;
+  }
+
+  .krishi-soil-1-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .krishi-soil-1-reset-btn,
+  .krishi-soil-1-analyze-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .krishi-soil-1-hero h1 {
+    font-size: 33px;
+  }
+
+  .krishi-soil-1-hero-points {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .krishi-soil-1-parameter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .krishi-soil-1-score-circle {
+    width: 100px;
+    height: 100px;
+  }
+}

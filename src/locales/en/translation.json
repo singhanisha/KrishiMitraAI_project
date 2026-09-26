@@ -18,6 +18,48 @@
     "farmerFirst": "Farmer First"
   },
 
+    "login": {
+    "tagline": "Your Smart Agriculture Companion",
+    "welcomeTitle": "Welcome Back!",
+    "welcomeDescription": "Access your smart agriculture companion and continue making better farming decisions.",
+    "title": "Login",
+    "description": "Login to continue to your account.",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "forgotPassword": "Forgot Password?",
+    "rememberMe": "Remember me",
+    "loginButton": "Login",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign Up"
+  },
+
+  "signup": {
+    "welcomeTitle": "Join KrishiMitra AI",
+    "welcomeDescription": "Create your account and get personalized agricultural insights, recommendations and assistance in one place.",
+    "title": "Create Account",
+    "description": "Sign up to get started with KrishiMitra AI.",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter your full name",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "phone": "Mobile Number",
+    "phonePlaceholder": "Enter your mobile number",
+    "password": "Password",
+    "passwordPlaceholder": "Create a password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Confirm your password",
+    "signupButton": "Create Account",
+    "alreadyAccount": "Already have an account?",
+    "login": "Login",
+    "invalidEmail": "Please enter a valid Gmail address.",
+    "invalidPhone": "Please enter a valid 10-digit Indian mobile number.",
+    "passwordMismatch": "Passwords do not match.",
+    "emailValidation": "Please enter a valid Gmail address ending with @gmail.com.",
+    "phoneValidation": "Mobile number must contain exactly 10 digits and start with 6, 7, 8, or 9."
+  },
+
   "services": {
     "title": "Our Smart Services",
     "subtitle": "Everything you need for successful farming, in one place",
@@ -25,7 +67,43 @@
     "cropRecommendation": {
       "title": "Crop Recommendation",
       "description": "Get AI-based crop suggestions based on soil and climate conditions.",
-      "button": "Get Recommendation"
+      "button": "Get Recommendation",
+
+      "soilClimateParameters": "Soil & Climate Parameters",
+      "reset": "Reset",
+      "quickSamples": "Quick Samples",
+
+      "presets": {
+        "rice": "Rice Profile",
+        "maize": "Maize Profile",
+        "cotton": "Cotton Profile"
+      },
+
+      "soilMacronutrients": "Soil Macronutrients & pH",
+      "climateConditions": "Climate & Environmental Conditions",
+
+      "nitrogen": "Nitrogen",
+      "phosphorus": "Phosphorus",
+      "potassium": "Potassium",
+      "soilPh": "Soil pH",
+
+      "temperature": "Temperature",
+      "humidity": "Humidity",
+      "rainfall": "Rainfall",
+
+      "predicting": "Predicting...",
+      "getRecommendation": "Get AI Recommendation",
+
+      "emptyResult": "Fill in the parameters and click \"Get AI Recommendation\" to see your result here.",
+      "runningModel": "Running the model...",
+
+      "primaryRecommendation": "Primary Recommendation",
+      "optimalMatch": "Optimal match for your input profile",
+
+      "modelProbability": "Model Statistical Probability",
+      "confidenceTier": "Confidence Tier",
+
+      "otherPossibleCrops": "Other possible crops"
     },
 
     "diseaseDetection": {
@@ -37,14 +115,120 @@
     "soilAnalysis": {
       "title": "Soil Analysis",
       "description": "Analyze your soil health and get improvement tips.",
-      "button": "Analyze Soil"
+      "button": "Analyze Soil",
+
+      "aiPowered": "AI-Powered Soil Analysis",
+      "heroTitle": "Understand Your Soil.",
+      "heroTitleHighlight": "Grow Better Crops.",
+      "heroDescription": "Enter your soil test values and get an easy-to-understand soil health report with nutrient insights, NPK balance, observations and potential risks.",
+
+      "soilHealthScore": "Soil Health Score",
+      "npkAnalysis": "NPK Analysis",
+      "actionableInsights": "Actionable Insights",
+
+      "soilTestData": "SOIL TEST DATA",
+      "enterSoilParameters": "Enter Soil Parameters",
+      "enterSoilParametersDescription": "Add the values from your soil test report.",
+
+      "essentialParameters": "Essential Parameters",
+      "required": "Required",
+
+      "additionalParameters": "Additional Parameters",
+      "optional": "Optional",
+
+      "nitrogen": "Nitrogen",
+      "phosphorus": "Phosphorus",
+      "potassium": "Potassium",
+      "soilPh": "Soil pH",
+
+      "electricalConductivity": "Electrical Conductivity",
+      "organicCarbon": "Organic Carbon",
+      "calciumCarbonate": "Calcium Carbonate",
+
+      "placeholders": {
+        "nitrogen": "e.g. 120",
+        "phosphorus": "e.g. 45",
+        "potassium": "e.g. 80",
+        "ph": "e.g. 6.8",
+        "ec": "e.g. 0.8",
+        "oc": "e.g. 0.65",
+        "caco3": "e.g. 4"
+      },
+
+      "units": {
+        "kgHa": "kg/ha",
+        "ph": "pH",
+        "dsM": "dS/m",
+        "percent": "%"
+      },
+
+      "infoMessage": "You can find these values in your soil testing report. N, P, K and pH are required for analysis. Other parameters can be added if available.",
+
+      "validationError": "Please enter Nitrogen, Phosphorus, Potassium and pH values.",
+      "invalidDataError": "Invalid soil data. Please check your values.",
+      "backendError": "Unable to analyze soil. Please make sure the backend server is running.",
+
+      "reset": "Reset",
+      "analyzeSoil": "Analyze My Soil",
+      "analyzingSoil": "Analyzing Soil...",
+
+      "whySoilAnalysis": "Why Soil Analysis?",
+      "whySoilAnalysisDescription": "Healthy soil is the foundation of productive farming. Understanding your soil helps you make better decisions about nutrients and crop management.",
+
+      "knowSoilHealth": "Know Soil Health",
+      "knowSoilHealthDescription": "Understand the overall condition of your soil.",
+
+      "understandNutrients": "Understand Nutrients",
+      "understandNutrientsDescription": "See whether important nutrients are low or high.",
+
+      "identifyRisks": "Identify Risks",
+      "identifyRisksDescription": "Find potential soil-related concerns early.",
+
+      "analysisComplete": "ANALYSIS COMPLETE",
+      "soilHealthReport": "Your Soil Health Report",
+      "reportDescription": "Here is the analysis based on the values you provided.",
+
+      "soilHealthScoreLabel": "SOIL HEALTH SCORE",
+      "parameterAnalysis": "Parameter Analysis",
+      "datasetRange": "Dataset range",
+
+      "npkBalance": "NPK BALANCE",
+      "soilSummary": "Soil Summary",
+      "keyObservations": "Key Observations",
+      "riskFlags": "Risk Flags",
+
+      "important": "Important"
     },
 
-    "weather": {
-      "title": "Weather Forecast",
-      "description": "Get weather updates and forecasts for your location.",
-      "button": "View Forecast"
-    },
+     "weather": {
+        "title": "Weather Forecast",
+        "description": "Get real-time weather updates and forecasts for your location.",
+        "liveWeather": "Live Weather",
+        "button": "View Forecast",
+        "searchPlaceholder": "Enter city name",
+        "search": "Search",
+        "useLocation": "My Location",
+        "loading": "Loading weather information...",
+        "humidity": "Humidity",
+        "windSpeed": "Wind Speed",
+        "cloudCoverage": "Cloud Coverage",
+        "feelsLike": "Feels Like",
+        "fiveDayForecast": "5 Day Forecast",
+        "upcomingWeather": "Upcoming Weather",
+        "farmingInsight": "Plan your farming activities with upcoming weather insights.",
+        "weatherAlt": "Weather",
+
+        "weekdays": {
+          "sunday": "Sunday",
+          "monday": "Monday",
+          "tuesday": "Tuesday",
+          "wednesday": "Wednesday",
+          "thursday": "Thursday",
+          "friday": "Friday",
+          "saturday": "Saturday"
+        }
+      },
+    
 
     "irrigation": {
       "title": "Irrigation Advisory",
@@ -55,13 +239,134 @@
     "yieldPrediction": {
       "title": "Yield Prediction",
       "description": "Predict your crop yield using AI models and historical data.",
-      "button": "Predict Yield"
+      "button": "Predict Yield",
+
+      "aiAnalytics": "AI Agricultural Analytics",
+      "subtitle": "Estimate crop yield using crop, location, season, area and agricultural factors.",
+
+      "quickSamples": "Quick Sample Profiles (Click to Auto-fill)",
+
+      "predictionRequestNotice": "Prediction Request Notice:",
+
+      "farmParameters": "Farm & Agricultural Parameters",
+
+      "harvestYear": "Harvest Year",
+      "state": "State / Union Territory",
+      "crop": "Crop",
+      "season": "Season",
+      "cultivatedArea": "Cultivated Area (Hectares)",
+      "annualRainfall": "Annual Rainfall (mm)",
+      "fertilizerApplied": "Fertilizer Applied (kg)",
+      "pesticideApplied": "Pesticide Applied (kg)",
+
+      "selectState": "-- Select State --",
+      "selectCrop": "-- Select Crop --",
+      "selectSeason": "-- Select Season --",
+
+      "resetForm": "Reset Form",
+      "predictingYield": "Predicting Yield...",
+
+      "predictionReady": "Prediction Ready",
+      "model": "Random Forest ML Regressor",
+      "predictedYield": "Predicted Yield",
+      "disclaimer": "Forecast calculated from empirical multi-factor agricultural models.",
+
+      "area": "Area",
+      "hectares": "Hectares",
+
+      "yieldMaximizationTip": "Yield Maximization Tip:",
+      "yieldTip": "Maintain balanced NPK fertilization and timely irrigation matching the critical growth stages of {{crop}} to realize optimal harvest output.",
+
+      "backHome": "Back to Home",
+      "predictAnother": "Predict Another Crop",
+
+      "required": "This field is required",
+      "invalidOption": "Please select a valid option",
+      "validNumber": "Must be a valid number",
+      "yearNegative": "Year cannot be negative",
+      "yearRange": "Year should be between 1990 and 2035",
+      "areaNegative": "Area cannot be negative",
+      "areaZero": "Area must be greater than 0 hectares",
+      "rainfallNegative": "Rainfall cannot be negative",
+      "fertilizerNegative": "Fertilizer quantity cannot be negative",
+      "pesticideNegative": "Pesticide quantity cannot be negative",
+
+      "placeholders": {
+        "year": "e.g. 2024",
+        "area": "e.g. 5.5",
+        "rainfall": "e.g. 1100",
+        "fertilizer": "e.g. 350000",
+        "pesticide": "e.g. 950"
+      },
+
+      "presets": {
+        "wheatPunjab": "Wheat (Punjab)",
+        "wheatBadge": "Rabi Cereal",
+        "jowarWestBengal": "Jowar (West Bengal)",
+        "jowarBadge": "Kharif Millet",
+        "sweetPotatoMeghalaya": "Sweet Potato (Meghalaya)",
+        "sweetPotatoBadge": "Tuber Crop",
+        "coconutAndhra": "Coconut (Andhra Pradesh)",
+        "coconutBadge": "Plantation (Nuts/ha)"
+      }
     },
 
     "marketPrices": {
       "title": "Market Prices",
       "description": "Check current mandi prices and market trends.",
-      "button": "Check Prices"
+      "button": "Check Prices",
+      "liveData": "Live Government Agmarknet Data",
+      "searchFilter": "Search & Filter Mandis",
+      "reset": "Reset",
+      "popularCommodities": "Popular Commodities",
+      "commodity": "Commodity",
+      "state": "State / UT",
+      "district": "District",
+      "market": "Market / Mandi",
+      "variety": "Variety / Grade",
+      "arrivalDate": "Arrival Date",
+      "rowsPerPage": "Rows per page",
+      "searching": "Searching...",
+      "searchMandiRates": "Search Mandi Rates",
+      "unableToLoad": "Unable to Load Market Prices",
+      "tryAgain": "Try Again",
+      "showing": "Showing",
+      "of": "of",
+      "records": "records",
+      "upstreamUpdated": "Upstream updated",
+      "refresh": "Refresh",
+      "fetchingPrices": "Fetching real-time Agmarknet commodity prices from government repository...",
+      "noRecords": "No Mandi Price Records Found",
+      "noRecordsDescription": "No market price records matched your current search filters. Try adjusting your commodity name, state, or district.",
+      "clearFilters": "Clear All Filters",
+      "minPrice": "Min Price",
+      "maxPrice": "Max Price",
+      "modalPrice": "Modal Price",
+      "other": "Other",
+      "standardVariety": "Standard Variety",
+      "minRate": "Min Rate",
+      "maxRate": "Max Rate",
+      "quintal": "Quintal",
+      "page": "Page",
+      "previous": "Previous",
+      "next": "Next",
+      "placeholders": {
+        "commodity": "e.g. Wheat, Potato, Onion",
+        "state": "e.g. Punjab, Maharashtra",
+        "district": "e.g. Pune, Agra, Ludhiana",
+        "market": "e.g. Lasalgaon, Achhnera"
+      },
+      "commodities": {
+        "Wheat": "Wheat",
+        "Rice": "Rice",
+        "Potato": "Potato",
+        "Onion": "Onion",
+        "Tomato": "Tomato",
+        "Mustard": "Mustard",
+        "Cotton": "Cotton",
+        "Maize": "Maize",
+        "Soyabean": "Soyabean"
+      }
     },
 
     "aiAssistant": {
@@ -107,5 +412,587 @@
     "languages": "Supported Languages",
     "models": "Intelligent Models",
     "platform": "Unified Platform"
-  }
+  },
+
+  "insightDetail": {
+
+  "soil": {
+  "badge": "Soil Health",
+  "title": "Build Healthier Soil for Better Crops",
+
+  "intro": "Healthy soil is the foundation of a productive farm. It provides crops with nutrients, water, air and support throughout their growing cycle.",
+
+  "quickFacts": [
+    {
+      "value": "NPK",
+      "label": "Key nutrients to monitor"
+    },
+    {
+      "value": "pH",
+      "label": "Controls nutrient availability"
+    },
+    {
+      "value": "Organic Matter",
+      "label": "Supports soil structure"
+    }
+  ],
+
+  "whyLabel": "Why Soil Health Matters",
+
+  "whyTitle": "Good crops start below the ground.",
+
+  "whyDescription": "Healthy soil helps roots access nutrients and water while supporting beneficial organisms. Understanding your soil before applying fertilizers can help reduce unnecessary input costs and improve crop management.",
+
+  "guideLabel": "Farmer's Guide",
+
+  "guideTitle": "5 habits for healthier soil",
+
+  "guideDescription": "Small improvements in soil management can make a difference over time. Focus on practices that match your crop, soil type and local conditions.",
+
+  "sections": [
+    {
+      "title": "Test Your Soil Before Fertilizing",
+      "description": "A soil test helps you understand pH and nutrient levels such as nitrogen, phosphorus and potassium. Use the results to guide fertilizer decisions instead of guessing.",
+      "tip": "Keep your latest soil-test report so you can compare changes over time."
+    },
+    {
+      "title": "Give Crops the Nutrients They Need",
+      "description": "Different crops have different nutrient requirements. Apply fertilizers according to crop needs and soil-test recommendations.",
+      "tip": "More fertilizer does not always mean more yield."
+    },
+    {
+      "title": "Return Organic Matter to the Soil",
+      "description": "Compost, farmyard manure and suitable crop residues can improve soil structure, moisture retention and biological activity.",
+      "tip": "Use well-decomposed organic material whenever possible."
+    },
+    {
+      "title": "Rotate Crops Across Seasons",
+      "description": "Changing crops across seasons can help maintain nutrient balance and interrupt some pest and disease cycles.",
+      "tip": "Choose rotation crops according to your soil, climate and market."
+    },
+    {
+      "title": "Protect Soil Structure",
+      "description": "Avoid unnecessary intensive tillage and protect exposed soil with suitable crop residues or mulch where appropriate.",
+      "tip": "Healthy soil structure supports better root growth and water movement."
+    }
+  ],
+
+  "doTitle": "Build Good Soil Habits",
+
+  "doList": [
+    "Test soil before making major fertilizer decisions.",
+    "Use organic matter where suitable.",
+    "Follow crop-specific nutrient recommendations.",
+    "Rotate crops when practical.",
+    "Protect soil from unnecessary erosion."
+  ],
+
+  "avoidTitle": "Common Soil Mistakes",
+
+  "avoidList": [
+    "Do not apply fertilizer only because the crop looks weak.",
+    "Avoid repeated excessive tillage.",
+    "Do not ignore soil pH.",
+    "Avoid leaving soil exposed to severe erosion.",
+    "Do not treat every field as if it has the same nutrient needs."
+  ],
+
+  "farmerTip": "Before spending more on fertilizers, understand what your soil actually needs. A soil test can turn guesswork into a more informed decision.",
+
+  "takeaway": "Healthy soil is not built in one season. Regular testing, balanced nutrition and good soil-management practices can protect productivity for years."
+},
+"disease": {
+  "badge": "Crop Protection",
+
+  "title": "Spot Crop Diseases Before They Spread",
+
+  "intro": "A small change in a leaf can sometimes be the first sign of a larger crop problem. Regular observation helps farmers notice unusual symptoms early and investigate them before the affected area becomes larger.",
+
+  "quickFacts": [
+    {
+      "value": "Weekly",
+      "label": "Inspect crops regularly"
+    },
+    {
+      "value": "Leaves",
+      "label": "Look for early symptoms"
+    },
+    {
+      "value": "Weather",
+      "label": "Humidity can affect disease risk"
+    }
+  ],
+
+  "whyLabel": "Why Early Detection Matters",
+
+  "whyTitle": "Notice the warning signs before the problem grows.",
+
+  "whyDescription": "Crop diseases can spread through fields under suitable environmental conditions. Early observation gives farmers more time to identify the possible cause and choose an appropriate response.",
+
+  "guideLabel": "Crop Protection Guide",
+
+  "guideTitle": "5 habits for healthier crops",
+
+  "guideDescription": "Regular monitoring, field hygiene and correct identification can help reduce avoidable crop losses.",
+
+  "sections": [
+    {
+      "title": "Walk Through the Field Regularly",
+      "description": "Inspect leaves, stems, flowers and fruits. Look at different parts of the field instead of checking only plants near the edge.",
+      "tip": "Pay closer attention after prolonged rain or humid conditions."
+    },
+    {
+      "title": "Learn the Early Warning Signs",
+      "description": "Yellowing, spots, wilting, curling, discoloration or unusual growth can indicate a possible disease or another crop stress.",
+      "tip": "Take a clear photo when you first notice an unusual symptom."
+    },
+    {
+      "title": "Check Before You Treat",
+      "description": "Not every yellow leaf or spot is caused by a disease. Nutrient deficiency, insects, weather and water stress can produce similar symptoms.",
+      "tip": "Correct identification should come before treatment."
+    },
+    {
+      "title": "Remove Sources of Infection",
+      "description": "Where appropriate, remove severely affected plant material and manage infected crop residues according to local agricultural guidance.",
+      "tip": "Avoid spreading contaminated plant material around the field."
+    },
+    {
+      "title": "Keep the Field Clean",
+      "description": "Manage weeds, remove unnecessary crop debris and avoid conditions that favour disease development.",
+      "tip": "Good field hygiene is part of crop protection."
+    }
+  ],
+
+  "doTitle": "Protect Your Crop",
+
+  "doList": [
+    "Inspect crops regularly.",
+    "Photograph unusual symptoms early.",
+    "Check the underside of leaves.",
+    "Consider weather conditions when assessing disease risk.",
+    "Ask a qualified agriculture expert when identification is uncertain."
+  ],
+
+  "avoidTitle": "Avoid These Mistakes",
+
+  "avoidList": [
+    "Do not assume every spot is a fungal disease.",
+    "Do not spray chemicals without identifying the problem.",
+    "Avoid using an old or unknown pesticide mixture.",
+    "Do not ignore disease symptoms until they spread.",
+    "Avoid moving infected plant material between fields."
+  ],
+
+  "farmerTip": "If you notice an unusual symptom, take a clear photo showing the whole plant and the affected part. This makes identification much easier.",
+
+  "takeaway": "Early observation does not guarantee that a crop disease can be prevented, but it gives farmers more time to identify the problem and respond appropriately."
+},
+"water": {
+  "badge": "Water Management",
+
+  "title": "Give Every Drop a Purpose",
+
+  "intro": "Water is one of the most valuable resources on a farm. Good irrigation management is about giving crops the moisture they need while reducing unnecessary loss from evaporation, runoff and over-irrigation.",
+
+  "quickFacts": [
+    {
+      "value": "Root Zone",
+      "label": "Focus irrigation where roots need it"
+    },
+    {
+      "value": "Weather",
+      "label": "Check conditions before irrigating"
+    },
+    {
+      "value": "Moisture",
+      "label": "Check soil before watering"
+    }
+  ],
+
+  "whyLabel": "Why Water Management Matters",
+
+  "whyTitle": "The goal is not more water. It is better-timed water.",
+
+  "whyDescription": "Too little water can stress crops, while unnecessary irrigation can waste water and create root or disease problems. Efficient irrigation depends on crop requirements, soil type, weather and the irrigation system available.",
+
+  "guideLabel": "Irrigation Guide",
+
+  "guideTitle": "5 ways to manage farm water better",
+
+  "guideDescription": "Use these practical habits to make irrigation decisions based on crop and field conditions.",
+
+  "sections": [
+    {
+      "title": "Check the Weather First",
+      "description": "Consider recent rainfall and the short-term weather forecast before irrigating. Rainfall may reduce the immediate water requirement.",
+      "tip": "Use KrishiMitra's weather feature to check upcoming conditions."
+    },
+    {
+      "title": "Irrigate According to the Crop",
+      "description": "Different crops and growth stages require different amounts of water. Avoid using the same irrigation schedule for every crop.",
+      "tip": "Crop stage matters when deciding irrigation needs."
+    },
+    {
+      "title": "Check Soil Moisture",
+      "description": "Observe soil moisture around the root zone before watering. Irrigating when the soil is already sufficiently moist can waste water.",
+      "tip": "Check the soil rather than relying only on a fixed schedule."
+    },
+    {
+      "title": "Use Efficient Irrigation",
+      "description": "Where suitable and affordable, systems such as drip irrigation can deliver water closer to plant roots and reduce some forms of water loss.",
+      "tip": "Choose an irrigation system based on crop, soil and farm conditions."
+    },
+    {
+      "title": "Protect Moisture in the Soil",
+      "description": "Suitable mulching and crop-residue management can reduce evaporation from the soil surface and help maintain moisture.",
+      "tip": "Keep exposed soil protected where practical."
+    }
+  ],
+
+  "doTitle": "Use Water Wisely",
+
+  "doList": [
+    "Check rainfall before irrigation.",
+    "Monitor soil moisture.",
+    "Adjust irrigation according to crop stage.",
+    "Maintain irrigation equipment regularly.",
+    "Use suitable water-saving practices."
+  ],
+
+  "avoidTitle": "Avoid Water Waste",
+
+  "avoidList": [
+    "Do not irrigate automatically without checking field conditions.",
+    "Avoid excessive watering.",
+    "Do not ignore leaking pipes or blocked emitters.",
+    "Avoid unnecessary flood irrigation where better options are suitable.",
+    "Do not treat every crop and soil type the same."
+  ],
+
+  "farmerTip": "Before turning on the pump, check three things: recent rainfall, soil moisture and the crop's current growth stage.",
+
+  "takeaway": "Efficient irrigation is about timing, quantity and observation. Give the crop what it needs while avoiding water that the soil and roots cannot use."
+}
+},
+ "about": {
+    "badge": "Smart Agriculture Platform",
+    "title": "Technology that understands farming.",
+    "lead": "KrishiMitra AI brings agricultural information, intelligent tools and practical guidance together in one simple platform for farmers.",
+    "heroCta": "Explore KrishiMitra AI",
+
+    "stats": {
+      "languages": "Indian Languages",
+      "modules": "Agriculture Modules",
+      "ai": "Smart Assistance"
+    },
+
+    "heroCard": {
+      "title": "Farmer First",
+      "text": "Simple, practical and accessible"
+    },
+
+    "storyTag": "Our Story",
+    "storyTitle": "Making agricultural technology easier to use.",
+    "storyP1": "Farmers make important decisions every day — from choosing a crop and understanding soil conditions to planning irrigation and checking market prices.",
+    "storyP2": "KrishiMitra AI was designed to bring these different sources of information into one farmer-friendly platform, reducing the need to search across multiple applications.",
+
+    "highlights": {
+      "oneTitle": "Simple Information",
+      "oneText": "Complex agricultural information is presented in an easier form.",
+      "twoTitle": "Data-Based Support",
+      "twoText": "Agricultural decisions can be supported using data and intelligent models.",
+      "threeTitle": "Regional Languages",
+      "threeText": "Information can be accessed in multiple Indian languages."
+    },
+
+    "purposeTag": "Our Purpose",
+    "purposeTitle": "Technology with a practical purpose",
+    "purposeLead": "KrishiMitra AI focuses on making useful agricultural technology understandable and accessible.",
+
+    "purpose": {
+      "cards": {
+        "dataTitle": "Useful Data",
+        "dataText": "Convert agricultural data into information that farmers can understand and use.",
+        "riskTitle": "Better Decisions",
+        "riskText": "Provide data-supported insights for crop, soil and farming-related decisions.",
+        "marketTitle": "Market Awareness",
+        "marketText": "Make agricultural market information easier to access and understand."
+      }
+    },
+
+    "featuresTag": "What We Provide",
+    "featuresTitle": "Agriculture tools in one place",
+    "featuresLead": "KrishiMitra AI combines different agricultural capabilities into one connected platform.",
+
+    "services": {
+      "crop": {
+        "badge": "Crop Planning",
+        "title": "Crop Recommendation",
+        "description": "Get crop suggestions based on important soil and environmental conditions.",
+        "meta": "Soil & Climate Insights"
+      },
+
+      "soil": {
+        "badge": "Soil Health",
+        "title": "Soil Analysis",
+        "description": "Understand important soil parameters and get useful information about soil conditions.",
+        "meta": "NPK & Soil Parameters"
+      },
+
+      "market": {
+        "badge": "Market Information",
+        "title": "Mandi Prices",
+        "description": "Access agricultural market price information to better understand current market conditions.",
+        "meta": "Market Price Insights"
+      },
+
+      "disease": {
+        "badge": "Plant Health",
+        "title": "Disease Detection",
+        "description": "Identify possible crop diseases using AI-based image analysis.",
+        "meta": "AI Image Analysis"
+      },
+
+      "weather": {
+        "badge": "Weather Support",
+        "title": "Weather Forecast",
+        "description": "Check weather conditions and forecasts to support day-to-day farming decisions.",
+        "meta": "Weather Information"
+      },
+
+      "yield": {
+        "badge": "Farm Planning",
+        "title": "Yield Prediction",
+        "description": "Use agricultural data and machine learning to estimate potential crop yield.",
+        "meta": "Machine Learning"
+      }
+    },
+
+    "farmerTag": "Designed for Farmers",
+    "farmerTitle": "Technology should feel simple.",
+    "farmerLead": "The platform is designed around accessibility, clarity and everyday agricultural needs.",
+
+    "farmer": {
+      "cards": {
+        "multilingual": {
+          "title": "Multilingual Access",
+          "text": "Agricultural information can be explored in multiple Indian regional languages."
+        },
+
+        "access": {
+          "title": "Easy to Access",
+          "text": "A responsive interface designed to work across phones, tablets and desktop screens.",
+          "item1": "Responsive design",
+          "item2": "Simple navigation"
+        },
+
+        "simple": {
+          "title": "Clear Guidance",
+          "text": "Technical information is organized into clear sections so users can understand the results more easily.",
+          "item1": "Clear visual information",
+          "item2": "Practical explanations"
+        }
+      }
+    },
+
+    "techTag": "Technology",
+    "techTitle": "Technology behind KrishiMitra AI",
+    "techLead": "The platform combines machine learning, APIs and modern web technologies to deliver its agricultural features.",
+
+    "tech": {
+      "cards": {
+        "ml": {
+          "title": "Machine Learning",
+          "text": "Machine learning models are used for agriculture-related prediction and recommendation tasks."
+        },
+
+        "data": {
+          "title": "Agricultural Data",
+          "text": "Agricultural datasets and relevant data sources support the platform's information and models."
+        },
+
+        "backend": {
+          "title": "FastAPI Backend",
+          "text": "The Python backend connects the frontend with models, APIs and application services."
+        },
+
+        "frontend": {
+          "title": "Modern Web Interface",
+          "text": "A responsive React interface provides a simple experience across different devices."
+        }
+      }
+    },
+
+    "ctaTag": "Start Exploring",
+    "ctaTitle": "Explore smarter agriculture with KrishiMitra AI.",
+    "ctaText": "Discover agricultural tools, information and AI-powered assistance in one place.",
+    "ctaButton": "Go to Home",
+
+    "alt": {
+      "farmer": "Farmer working in an agricultural field",
+      "story": "Indian farmer"
+    }
+  },
+  "servicesPage": {
+  "badge": "Smart Agricultural Suite",
+  "title": "Agricultural tools, connected in one place.",
+  "lead": "KrishiMitra AI brings essential agricultural decision-support tools together on one accessible platform.",
+
+  "heroPoints": {
+    "farmer": "Farmer-focused",
+    "data": "Data-supported",
+    "multilingual": "Multilingual"
+  },
+
+  "modulesTag": "Core Modules",
+  "modulesTitle": "Everything you need for informed farming",
+  "modulesLead": "Explore the agricultural capabilities available across the KrishiMitra AI platform.",
+
+  "status": {
+    "available": "Available • Operational",
+    "developed": "Model Developed • Capability",
+    "planned": "Planned • Capability"
+  },
+
+  "modules": {
+    "crop": {
+      "name": "Crop Recommendation",
+      "category": "Machine Learning Prediction",
+      "status": "available",
+      "description": "Get crop recommendations based on important soil and environmental conditions.",
+      "features": [
+        "7-parameter multi-variable analysis",
+        "Scikit-Learn Random Forest Classifier (99.5% accuracy)",
+        "Ranked options with confidence tiers"
+      ],
+      "info": "Active ML service • Verified dataset"
+    },
+
+    "soil": {
+      "name": "Soil Analysis & Soil Health",
+      "category": "Nutrient Evaluation System",
+      "status": "available",
+      "description": "Understand important soil nutrients and parameters to support better agricultural decisions.",
+      "features": [
+        "NPK parameter analysis",
+        "Soil health evaluation",
+        "Data-supported agricultural information"
+      ],
+      "info": "Soil analysis service • Agricultural data"
+    },
+
+    "market": {
+      "name": "Mandi / Market Prices",
+      "category": "Live Government Market Data",
+      "status": "available",
+      "description": "View mandi and market price information to understand current agricultural market conditions.",
+      "features": [
+        "Government of India Open Data",
+        "Agmarknet-based market information",
+        "Crop and market-specific information"
+      ],
+      "info": "Market data service • Government data source"
+    },
+
+    "disease": {
+      "name": "Plant Disease Detection",
+      "category": "Computer Vision Framework",
+      "status": "developed",
+      "description": "Use AI-based image analysis to identify potential plant diseases.",
+      "features": [
+        "AI-based image analysis",
+        "Plant disease classification",
+        "Crop health information"
+      ],
+      "info": "Computer Vision model • Image analysis"
+    },
+
+    "weather": {
+      "name": "Weather Forecast",
+      "category": "Agro-Climatic Intelligence",
+      "status": "planned",
+      "description": "View current weather conditions and forecasts to support daily farming decisions.",
+      "features": [
+        "Current weather information",
+        "Weather forecasting",
+        "Support for agricultural decisions"
+      ],
+      "info": "Weather Intelligence • API based"
+    },
+
+    "yield": {
+      "name": "Yield Prediction",
+      "category": "Predictive Harvest Analytics",
+      "status": "developed",
+      "description": "Estimate potential crop yield using agricultural data and machine learning.",
+      "features": [
+        "Agricultural data analysis",
+        "Machine Learning-based prediction",
+        "Yield planning support"
+      ],
+      "info": "Machine Learning model • Agricultural prediction"
+    }
+  },
+
+  "workflowTag": "Integrated Workflow",
+  "workflowTitle": "Supporting the farming journey from field to market",
+  "workflowLead": "The modules are designed to support different stages of the agricultural cycle, helping farmers access relevant information when they need it.",
+
+  "workflow": {
+    "preSowing": {
+      "phase": "Pre-Sowing",
+      "title": "Soil & Crop Selection",
+      "description": "Understand suitable crop options using soil and environmental information."
+    },
+
+    "growth": {
+      "phase": "Growth Stage",
+      "title": "Weather & Plant Health",
+      "description": "Monitor weather conditions and information related to plant health."
+    },
+
+    "harvest": {
+      "phase": "Harvest Stage",
+      "title": "Yield & Storage Planning",
+      "description": "Use potential yield information to support harvest and post-harvest planning."
+    },
+
+    "selling": {
+      "phase": "Selling Stage",
+      "title": "Mandi Market Intelligence",
+      "description": "Use mandi and market price information to support selling decisions."
+    }
+  },
+
+  "highlightsTag": "Why KrishiMitra AI",
+  "highlightsTitle": "One platform for connected agricultural decisions.",
+  "highlightsText": "Instead of searching across separate agricultural tools, KrishiMitra AI brings crop, soil, weather, plant health, yield and market information into one farmer-friendly platform.",
+
+  "trust": {
+    "ml": {
+      "title": "Data & AI Support",
+      "text": "Machine learning and agricultural data support selected prediction and recommendation features."
+    },
+
+    "market": {
+      "title": "Market Information",
+      "text": "Market information can help farmers understand current mandi conditions and price trends."
+    },
+
+    "language": {
+      "title": "Regional Languages",
+      "text": "The platform is designed to make agricultural information accessible across Indian regional languages."
+    },
+
+    "farmer": {
+      "title": "Farmer-Centric Design",
+      "text": "The interface focuses on clear information, simple navigation and practical agricultural use."
+    }
+  },
+
+  "closingTag": "Explore KrishiMitra AI",
+  "closingTitle": "Explore agricultural tools built around real farming needs.",
+  "closingText": "Use the platform to explore agricultural information, understand your farm data and access decision-support features in one place.",
+  "homeButton": "Back to Home"
+}
 }

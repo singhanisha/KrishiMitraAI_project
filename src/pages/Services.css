@@ -1,0 +1,837 @@
+/* =========================================================
+   KRISHIMITRA AI
+   SERVICES PAGE ONLY
+   UNIQUE PREFIX: kmasvc1-
+========================================================= */
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.kmasvc1-page {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #f7faf6;
+  color: #17351f;
+}
+
+
+/* =========================================================
+   HEADER / HERO
+========================================================= */
+
+.kmasvc1-header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(105, 153, 88, 0.14),
+      transparent 28%
+    ),
+    linear-gradient(
+      135deg,
+      #f3f9f1 0%,
+      #edf6ea 52%,
+      #f9fcf8 100%
+    );
+}
+
+.kmasvc1-hero {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 105px 20px 100px;
+  text-align: center;
+}
+
+.kmasvc1-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 15px;
+  border: 1px solid rgba(66, 115, 63, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.76);
+  color: #4a7946;
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  box-shadow: 0 5px 18px rgba(45, 83, 45, 0.04);
+}
+
+.kmasvc1-hero-badge svg {
+  flex-shrink: 0;
+}
+
+.kmasvc1-hero h1 {
+  max-width: 850px;
+  margin: 23px auto 0;
+  color: #183b22;
+  font-size: clamp(42px, 6vw, 68px);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+}
+
+.kmasvc1-hero > p {
+  max-width: 720px;
+  margin: 23px auto 0;
+  color: #647367;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.kmasvc1-hero-points {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 29px;
+}
+
+.kmasvc1-hero-points span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 14px;
+  border: 1px solid rgba(63, 105, 60, 0.12);
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.74);
+  color: #526457;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.kmasvc1-hero-points svg {
+  color: #598750;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.kmasvc1-section-heading {
+  max-width: 730px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.kmasvc1-section-tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #508149;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.kmasvc1-section-heading h2 {
+  margin: 0;
+  color: #1b3e24;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.kmasvc1-section-heading p {
+  max-width: 650px;
+  margin: 16px auto 0;
+  color: #6a786d;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   CORE MODULES
+========================================================= */
+
+.kmasvc1-modules {
+  width: 100%;
+  padding: 105px 20px;
+  background: #ffffff;
+}
+
+.kmasvc1-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.kmasvc1-card {
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e2ebe0;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 8px 28px rgba(37, 72, 39, 0.05);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.kmasvc1-card:hover {
+  transform: translateY(-5px);
+  border-color: #cddfc9;
+  box-shadow: 0 17px 38px rgba(37, 72, 39, 0.10);
+}
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.kmasvc1-card-top {
+  position: relative;
+  height: 205px;
+  overflow: hidden;
+}
+
+.kmasvc1-image-box {
+  width: 100%;
+  height: 100%;
+}
+
+.kmasvc1-image-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.kmasvc1-card:hover .kmasvc1-image-box img {
+  transform: scale(1.045);
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.kmasvc1-status {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 750;
+  line-height: 1.2;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.kmasvc1-status-available {
+  background: rgba(43, 103, 54, 0.88);
+}
+
+.kmasvc1-status-developed {
+  background: rgba(71, 87, 52, 0.89);
+}
+
+.kmasvc1-status-planned {
+  background: rgba(89, 96, 66, 0.89);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.kmasvc1-card-content {
+  flex: 1;
+  padding: 22px 21px 20px;
+}
+
+.kmasvc1-category {
+  display: block;
+  color: #769078;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.10em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.kmasvc1-card-content h3 {
+  margin: 13px 0 0;
+  color: #1c4026;
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 760;
+}
+
+.kmasvc1-card-content > p {
+  min-height: 72px;
+  margin: 11px 0 0;
+  color: #68766c;
+  font-size: 13px;
+  line-height: 1.68;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.kmasvc1-features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 19px;
+  padding-top: 18px;
+  border-top: 1px solid #edf1eb;
+}
+
+.kmasvc1-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #526156;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.kmasvc1-feature-check {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: #5b8b54;
+}
+
+
+/* =========================================================
+   CARD FOOTER
+========================================================= */
+
+.kmasvc1-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 15px 21px 18px;
+  border-top: 1px solid #edf1eb;
+}
+
+.kmasvc1-info {
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #829084;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.kmasvc1-info svg {
+  flex-shrink: 0;
+  color: #60865b;
+}
+
+.kmasvc1-number {
+  flex-shrink: 0;
+  color: #a2ada3;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+
+/* =========================================================
+   FARMING LIFECYCLE
+========================================================= */
+
+.kmasvc1-lifecycle {
+  width: 100%;
+  padding: 105px 20px;
+  background: #f4f8f2;
+}
+
+.kmasvc1-lifecycle-card {
+  position: relative;
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 78px 55px 65px;
+  border: 1px solid #dfe9dc;
+  border-radius: 28px;
+  background: #fbfdf9;
+  box-shadow: 0 12px 38px rgba(39, 72, 40, 0.05);
+}
+
+.kmasvc1-lifecycle-leaves {
+  position: absolute;
+  right: -20px;
+  bottom: -25px;
+  width: 240px;
+  max-width: 25%;
+  opacity: 0.11;
+  pointer-events: none;
+  user-select: none;
+}
+
+.kmasvc1-lifecycle-heading {
+  position: relative;
+  z-index: 2;
+}
+
+.kmasvc1-lifecycle-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.kmasvc1-lifecycle-step {
+  min-width: 0;
+  padding: 23px 20px;
+  border: 1px solid #e4ece1;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.kmasvc1-step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background: #e7f1e4;
+  color: #4f7e4a;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.kmasvc1-step-phase {
+  display: block;
+  margin-bottom: 8px;
+  color: #759077;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.kmasvc1-lifecycle-step h3 {
+  margin: 0;
+  color: #24472c;
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.kmasvc1-lifecycle-step p {
+  margin: 9px 0 0;
+  color: #6c786e;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   PLATFORM HIGHLIGHTS
+========================================================= */
+
+.kmasvc1-highlights {
+  width: 100%;
+  padding: 105px 20px;
+  background: #ffffff;
+}
+
+.kmasvc1-highlights-content {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.kmasvc1-highlight-tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #508149;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.kmasvc1-highlights-content h2 {
+  margin: 0;
+  color: #1b3e24;
+  font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.kmasvc1-highlights-content > p {
+  max-width: 680px;
+  margin: 17px auto 0;
+  color: #69776c;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   TRUST GRID
+========================================================= */
+
+.kmasvc1-trust-grid {
+  width: min(1180px, 100%);
+  margin: 50px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.kmasvc1-trust-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  min-width: 0;
+  padding: 23px 20px;
+  border: 1px solid #e3ebe1;
+  border-radius: 18px;
+  background: #fbfdfb;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.kmasvc1-trust-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 13px 30px rgba(40, 73, 40, 0.07);
+}
+
+.kmasvc1-trust-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  flex: 0 0 43px;
+  border-radius: 12px;
+  background: #eaf3e7;
+  color: #4d8048;
+}
+
+.kmasvc1-trust-item h3 {
+  margin: 1px 0 0;
+  color: #27482e;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.kmasvc1-trust-item p {
+  margin: 8px 0 0;
+  color: #6d796f;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   LANGUAGE ICON
+========================================================= */
+
+.kmasvc1-language-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 19px;
+  border: 1.5px solid currentColor;
+  border-radius: 50%;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+
+/* =========================================================
+   CLOSING CTA
+========================================================= */
+
+.kmasvc1-closing {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 82px 20px;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(142, 181, 111, 0.13),
+      transparent 30%
+    ),
+    #1b4224;
+}
+
+.kmasvc1-closing-content {
+  width: min(760px, 100%);
+  margin: 0 auto;
+}
+
+.kmasvc1-closing-label {
+  display: inline-block;
+  margin-bottom: 13px;
+  color: #aac89f;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.kmasvc1-closing-content h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(30px, 4vw, 45px);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.kmasvc1-closing-content p {
+  max-width: 650px;
+  margin: 17px auto 0;
+  color: #c7d6c5;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.kmasvc1-home-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 28px;
+  padding: 13px 19px;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #28502f;
+  font-size: 13px;
+  font-weight: 750;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.kmasvc1-home-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.kmasvc1-home-button svg {
+  transition: transform 0.2s ease;
+}
+
+.kmasvc1-home-button:hover svg {
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .kmasvc1-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kmasvc1-lifecycle-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kmasvc1-trust-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kmasvc1-lifecycle-card {
+    padding: 65px 35px 50px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .kmasvc1-hero {
+    width: min(100% - 28px, 1180px);
+    padding: 70px 0 65px;
+  }
+
+  .kmasvc1-hero h1 {
+    font-size: 40px;
+  }
+
+  .kmasvc1-hero > p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .kmasvc1-hero-points {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .kmasvc1-hero-points span {
+    justify-content: center;
+  }
+
+
+  .kmasvc1-modules,
+  .kmasvc1-lifecycle,
+  .kmasvc1-highlights {
+    padding: 75px 14px;
+  }
+
+  .kmasvc1-section-heading {
+    margin-bottom: 38px;
+  }
+
+  .kmasvc1-section-heading h2 {
+    font-size: 30px;
+  }
+
+  .kmasvc1-section-heading p {
+    font-size: 14px;
+  }
+
+
+  .kmasvc1-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .kmasvc1-card-top {
+    height: 220px;
+  }
+
+  .kmasvc1-card-content > p {
+    min-height: auto;
+  }
+
+
+  .kmasvc1-lifecycle-card {
+    padding: 58px 18px 35px;
+    border-radius: 22px;
+  }
+
+  .kmasvc1-lifecycle-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .kmasvc1-lifecycle-leaves {
+    width: 180px;
+    max-width: 45%;
+    right: -30px;
+    bottom: -10px;
+  }
+
+
+  .kmasvc1-trust-grid {
+    grid-template-columns: 1fr;
+    margin-top: 38px;
+  }
+
+  .kmasvc1-trust-item {
+    padding: 20px 17px;
+  }
+
+
+  .kmasvc1-closing {
+    padding: 70px 18px;
+  }
+
+  .kmasvc1-closing-content h2 {
+    font-size: 31px;
+  }
+
+  .kmasvc1-closing-content p {
+    font-size: 13px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .kmasvc1-hero {
+    width: calc(100% - 22px);
+    padding-top: 55px;
+  }
+
+  .kmasvc1-hero h1 {
+    font-size: 35px;
+  }
+
+  .kmasvc1-hero-badge {
+    font-size: 11px;
+  }
+
+  .kmasvc1-card-top {
+    height: 205px;
+  }
+
+  .kmasvc1-card-content {
+    padding: 19px 17px;
+  }
+
+  .kmasvc1-card-content h3 {
+    font-size: 20px;
+  }
+
+  .kmasvc1-card-footer {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .kmasvc1-lifecycle-card {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .kmasvc1-closing-content h2 {
+    font-size: 28px;
+  }
+
+}
