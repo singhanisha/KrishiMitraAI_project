@@ -4,16 +4,22 @@ import {
   ChevronDown,
   Sprout,
   UserRound,
+  LogOut,
   Menu,
   X,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect  } from "react";
+import axios from "axios";                                     
+import { isLoggedIn, logout, getToken, getUserName, setUserName } from "../utils/auth";
 
 function Navbar() {
   const { t, i18n } = useTranslation();
 
   const [languageOpen, setLanguageOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const loggedIn = isLoggedIn();
+  const [userName, setUserNameState] = useState(getUserName());
+  
 
   const languages = [
     { code: "en", name: "English" },
@@ -34,6 +40,21 @@ function Navbar() {
     setLanguageOpen(false);
     setMobileMenuOpen(false);
   };
+
+  useEffect(() => {
+      if (!loggedIn || userName) return;
+      axios
+        .get("http://127.0.0.1:8000/auth/me", {
+          headers: { Authorization: `Bearer ${getToken()}` },
+        })
+        .then((res) => {
+          setUserName(res.data.full_name);
+          setUserNameState(res.data.full_name);
+        })
+        .catch(() => {});
+    }, [loggedIn, userName]);
+  
+    const firstName = (userName || "").trim().split(" ")[0];
 
   const currentLanguage =
     languages.find(
@@ -168,17 +189,35 @@ function Navbar() {
 
 
         {/* LOGIN */}
-        <Link
-          to="/login"
-          className="login-button"
-          onClick={() => {
-            setLanguageOpen(false);
-            setMobileMenuOpen(false);
-          }}
-        >
-          <UserRound size={17} />
-          {t("navbar.login")}
-        </Link>
+        {loggedIn ? (
+          <>
+            <span className="user-chip" title={userName}>
+              <UserRound size={17} />
+                {firstName || t("navbar.account", "Account")}
+            </span>
+        
+            <button
+              type="button"
+              className="logout-button"
+              onClick={logout}
+            >
+              <LogOut size={16} />
+              {t("navbar.logout", "Logout")}
+            </button>
+          </>
+            ) : (
+              <Link
+                to="/login"
+                className="login-button"
+                onClick={() => {
+                setLanguageOpen(false);
+                setMobileMenuOpen(false);
+                }}
+              >
+              <UserRound size={17} />
+                {t("navbar.login")}
+              </Link>
+            )}
 
       </div>
 

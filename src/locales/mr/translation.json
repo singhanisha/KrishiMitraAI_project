@@ -374,6 +374,49 @@
     }
   },
 
+  "diseaseDetectionPage": {
+    "badge": "AI-आधारित पीक आरोग्य",
+    "heroTitle": "पिकावरील रोग ओळखा",
+    "heroHighlight": " AI च्या मदतीने लवकर",
+    "heroDescription": "पिकाच्या पानाचा स्पष्ट फोटो अपलोड करा. KrishiMitra AI संभाव्य रोग ओळखून उपयुक्त मार्गदर्शन देईल.",
+    "cardTitle": "पानावरील रोग ओळख",
+    "cardDescription": "बाधित पानाचा स्पष्ट फोटो अपलोड करा.",
+    "uploadTitle": "पानाचा फोटो अपलोड करा",
+    "dragDrop": "फोटो येथे ड्रॅग आणि ड्रॉप करा किंवा",
+    "browseFiles": "फाइल निवडा",
+    "fileRequirements": "JPG, JPEG किंवा PNG • कमाल 10 MB",
+    "selectedImage": "निवडलेला पानाचा फोटो",
+    "selectedImageAlt": "निवडलेले पीक पान",
+    "remove": "काढा",
+    "detectButton": "रोग ओळखा",
+    "analyzing": "पिकाचे विश्लेषण सुरू आहे...",
+    "analyzingDescription": "AI पानाच्या फोटोमध्ये संभाव्य रोग तपासत आहे.",
+    "scanningAlt": "पान तपासत आहे",
+    "analysisComplete": "AI विश्लेषण पूर्ण",
+    "resultTitle": "ओळखीचा निकाल",
+    "detected": "ओळखले: {{type}}",
+    "confidence": "विश्वास पातळी",
+    "aboutResult": "या निकालाबद्दल",
+    "recommendedAction": "शिफारस केलेली कृती",
+    "otherResults": "इतर संभाव्य निकाल",
+    "scanAnother": "दुसरे पान तपासा",
+    "tips": {
+      "clearImageTitle": "स्पष्ट फोटो",
+      "clearImageDescription": "बाधित पानाचा स्पष्ट फोटो घ्या.",
+      "lightingTitle": "चांगला प्रकाश",
+      "lightingDescription": "अंधारे किंवा अस्पष्ट फोटो टाळा.",
+      "focusTitle": "पानावर लक्ष केंद्रित करा",
+      "focusDescription": "बाधित पान स्पष्ट दिसेल याची खात्री करा."
+    },
+    "errors": {
+      "invalidImage": "कृपया योग्य इमेज फाइल निवडा.",
+      "fileTooLarge": "फोटोचा आकार 10 MB पेक्षा कमी असावा.",
+      "noImage": "कृपया आधी पिकाच्या पानाचा फोटो अपलोड करा.",
+      "predictionFailed": "रोग ओळखता आला नाही.",
+      "serverError": "रोग ओळख सर्व्हरशी जोडता येत नाही."
+    }
+  },
+
   "insights": {
     "title": "शेतकऱ्यांसाठी माहिती आणि टिप्स",
     "subtitle": "तुमची शेती सुधारण्यासाठी उपयुक्त माहिती",
@@ -1040,7 +1083,34 @@
     "closingTitle": "शेतीच्या वास्तविक गरजांनुसार तयार केलेली कृषी साधने एक्सप्लोर करा.",
     "closingText": "कृषी माहिती पहा, तुमच्या शेतातील डेटा समजून घ्या आणि एकाच ठिकाणी निर्णय-सहाय्य सुविधांचा वापर करा.",
     "homeButton": "होमवर जा"
-  }
+  },
+
+  "forgotPasswordPage": {
+      "title": "पासवर्ड विसरलात?",
+      "description": "तुमचा नोंदणीकृत ईमेल टाका. आम्ही तुम्हाला पासवर्ड रीसेट लिंक पाठवू.",
+      "email": "ईमेल",
+      "emailPlaceholder": "yourname@gmail.com",
+      "sending": "पाठवत आहे...",
+      "sendResetLink": "रीसेट लिंक पाठवा",
+      "backToLogin": "लॉगिनवर परत जा",
+      "genericError": "काहीतरी चूक झाली.",
+      "connectionError": "सर्व्हरशी कनेक्ट होता आले नाही."
+    },
+     "resetPasswordPage": {
+      "title": "नवीन पासवर्ड सेट करा",
+      "description": "कृपया तुमचा नवीन पासवर्ड टाका.",
+      "newPassword": "नवीन पासवर्ड",
+      "confirmPassword": "पासवर्डची पुष्टी करा",
+      "saving": "सेव्ह करत आहे...",
+      "resetButton": "पासवर्ड रीसेट करा",
+      "passwordMismatch": "दोन्ही पासवर्ड जुळत नाहीत.",
+      "invalidLink": "रीसेट लिंक अवैध आहे.",
+      "requestNewLink": "नवीन लिंक मागवा",
+      "resetError": "पासवर्ड रीसेट करता आला नाही.",
+      "successMessage": "तुमचा पासवर्ड यशस्वीरीत्या रीसेट झाला आहे.",
+      "showPassword": "पासवर्ड दाखवा",
+      "hidePassword": "पासवर्ड लपवा"
+    }
 
 
 }

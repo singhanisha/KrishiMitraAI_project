@@ -5,7 +5,8 @@
     "services": "Services",
     "resources": "Resources",
     "contact": "Contact Us",
-    "login": "Login"
+    "login": "Login",
+    "tagline": "Your Smart Agriculture Companion"
   },
 
   "hero": {
@@ -105,6 +106,8 @@
 
       "otherPossibleCrops": "Other possible crops"
     },
+
+    
 
     "diseaseDetection": {
       "title": "Disease Detection",
@@ -373,6 +376,49 @@
       "title": "AI Assistant",
       "description": "Ask anything about farming in your language.",
       "button": "Chat Now"
+    }
+  },
+
+   "diseaseDetectionPage": {
+    "badge": "AI-POWERED CROP HEALTH",
+    "heroTitle": "Detect Crop Diseases",
+    "heroHighlight": " Early with AI",
+    "heroDescription": "Upload a clear photo of your crop leaf and let KrishiMitra AI identify possible diseases and provide helpful guidance.",
+    "cardTitle": "Leaf Disease Detection",
+    "cardDescription": "Upload a clear image of the affected crop leaf.",
+    "uploadTitle": "Upload your leaf image",
+    "dragDrop": "Drag & drop your image here or",
+    "browseFiles": "browse files",
+    "fileRequirements": "JPG, JPEG or PNG • Maximum 10 MB",
+    "selectedImage": "Selected Leaf Image",
+    "selectedImageAlt": "Selected crop leaf",
+    "remove": "Remove",
+    "detectButton": "Detect Disease",
+    "analyzing": "Analyzing your crop...",
+    "analyzingDescription": "AI is examining the leaf image for possible diseases.",
+    "scanningAlt": "Scanning leaf",
+    "analysisComplete": "AI ANALYSIS COMPLETE",
+    "resultTitle": "Detection Result",
+    "detected": "DETECTED {{type}}",
+    "confidence": "Confidence",
+    "aboutResult": "About this Result",
+    "recommendedAction": "Recommended Action",
+    "otherResults": "Other Possible Results",
+    "scanAnother": "Scan Another Leaf",
+    "tips": {
+      "clearImageTitle": "Clear Image",
+      "clearImageDescription": "Take a clear photo of the affected leaf.",
+      "lightingTitle": "Good Lighting",
+      "lightingDescription": "Avoid dark or blurry photos.",
+      "focusTitle": "Focus on Leaf",
+      "focusDescription": "Keep the affected leaf clearly visible."
+    },
+    "errors": {
+      "invalidImage": "Please select a valid image file.",
+      "fileTooLarge": "Image size should be less than 10 MB.",
+      "noImage": "Please upload a crop leaf image first.",
+      "predictionFailed": "Disease prediction failed.",
+      "serverError": "Unable to connect to the disease detection server."
     }
   },
 
@@ -994,5 +1040,33 @@
   "closingTitle": "Explore agricultural tools built around real farming needs.",
   "closingText": "Use the platform to explore agricultural information, understand your farm data and access decision-support features in one place.",
   "homeButton": "Back to Home"
-}
+},
+
+"forgotPasswordPage": {
+      "title": "Forgot Password?",
+      "description": "Please enter your registered email and we will send you a reset link.",
+      "email": "Email",
+      "emailPlaceholder": "yourname@gmail.com",
+      "sending": "Sending...",
+      "sendResetLink": "Send Reset Link",
+      "backToLogin": "Back to Login",
+      "genericError": "Something went wrong.",
+      "connectionError": "Unable to connect to the server."
+    },
+
+    "resetPasswordPage": {
+      "title": "Set New Password",
+      "description": "Please enter your new password.",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm Password",
+      "saving": "Saving...",
+      "resetButton": "Reset Password",
+      "passwordMismatch": "Passwords do not match.",
+      "invalidLink": "Invalid reset link.",
+      "requestNewLink": "Request a new one",
+      "resetError": "Unable to reset password.",
+      "successMessage": "Your password has been reset successfully.",
+      "showPassword": "Show password",
+      "hidePassword": "Hide password"
+    }
 }

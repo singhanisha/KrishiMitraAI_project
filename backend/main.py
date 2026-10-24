@@ -4,15 +4,17 @@ import difflib
 import unicodedata
 from dotenv import load_dotenv
 
-from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi import FastAPI, UploadFile, File, HTTPException, Form
 from fastapi.responses import Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from database import Base, engine
 from auth.routes import router as auth_router
 
+from chat_extras import handle_extra_intents, looks_like_yield_or_price
 import requests
 from groq import Groq
+from llm_utils import llm_complete, extract_city_with_llm
 
 
 
@@ -30,6 +32,7 @@ from ml.crop_schema import CropRecommendationRequest, CropRecommendationResponse
 from ml.soil_advisory import generate_soil_advisory
 from ml.yield_predictor import yield_predictor
 from ml.yield_schema import YieldPredictionRequest, YieldPredictionResponse
+from ml.predict_api import router as disease_router
 
 load_dotenv()
 
@@ -57,6 +60,8 @@ LANGUAGE_VOICE_MAP = {
 app = FastAPI(
     title="KrishiMitra AI Backend"
 )
+
+app.include_router(disease_router)
 
 Base.metadata.create_all(bind=engine)
 
@@ -230,22 +235,19 @@ def phrase_in_language(facts, language):
 
     try:
         prompt = f"""
-Write ONE short, natural, farmer-friendly sentence in {language_name}
-that conveys exactly the following facts. Do not add, remove, or
-change any numbers or names. Do not add extra information. Only output
-the sentence in {language_name}, nothing else.
+        Write ONE short, natural, farmer-friendly sentence in {language_name}
+        that conveys exactly the following facts. Do not add, remove, or
+        change any numbers or names. Do not add extra information. Only output
+        the sentence in {language_name}, nothing else.
 
-Facts: {facts}
-"""
+        Facts: {facts}
+        """
+        text = llm_complete(prompt, temperature=0.3, max_tokens=800)
+        return text if text else facts
 
-        response = groq_client.chat.completions.create(
-            model=GROQ_MODEL,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0.3,
-            max_tokens=200,
-        )
-
-        return response.choices[0].message.content.strip()
+    except Exception as e:
+        print("Phrasing Error:", e)
+        return facts
 
     except Exception as e:
         print("Phrasing Error:", e)
@@ -622,14 +624,7 @@ Output ONLY the translated crop name, nothing else — no explanation,
 no punctuation, no English text.
 """
 
-        response = groq_client.chat.completions.create(
-            model=GROQ_MODEL,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0,
-            max_tokens=30,
-        )
-
-        translated = response.choices[0].message.content.strip()
+        translated = llm_complete(prompt, temperature=0, max_tokens=300)
 
         print(f"Crop name translation (LLM fallback): {crop_name} -> '{translated}'")
 
@@ -967,33 +962,55 @@ def chat(request: ChatRequest):
 
     print("Detected Intent:", intent)
 
+     # Yield / mandi jaisa lage to pehle wahi try karo (weather/crop intent ko override)
+    if intent in ("weather", "crop_recommendation") and looks_like_yield_or_price(message):
+        extra = handle_extra_intents(
+            message,
+            detect_language(message),
+            phrase_in_language,
+            ask_llama,
+        )
+        if extra:
+            return extra
+
     # --------------------------------------
     # WEATHER
     # --------------------------------------
 
     if intent == "weather":
 
-        city = extract_city(message)
-
-        print("Detected City (regex):", city)
-
-        if city:
-
-            resolved_city = resolve_city_in_english(message, city)
-
-            if resolved_city:
-
-                weather_response = create_weather_response(message, resolved_city)
-
-                if weather_response:
-                    return {
-                        "response": weather_response,
-                        "source": "weather_api",
-                        "intent": "weather",
-                        "city": resolved_city
-                    }
-
         language = detect_language(message)
+
+        # 1) Fast path: known city dictionary (substring, lamba naam pehle)
+        city_en = None
+        for native_name in sorted(CITY_NAME_TRANSLATIONS, key=len, reverse=True):
+            if len(native_name) >= 3 and native_name in message:
+                city_en = CITY_NAME_TRANSLATIONS[native_name]
+                break
+
+        # 2) English message: regex city (jaisa pehle tha)
+        if not city_en and re.search(r"[A-Za-z]{3}", message) and not re.search(r"[^\x00-\x7F]", message):
+            regex_city = extract_city(message)
+            if regex_city:
+                city_en = resolve_city_in_english(message, regex_city)
+
+        # 3) Baaki sab: LLM poore message se English city nikaale
+        if not city_en:
+            city_en = extract_city_with_llm(message)
+
+        print("Final city for weather:", city_en)
+
+        if city_en:
+            # ',IN' => galat desh ka same-naam shahar na aaye
+            weather_response = create_weather_response(message, f"{city_en},IN")
+
+            if weather_response:
+                return {
+                    "response": weather_response,
+                    "source": "weather_api",
+                    "intent": "weather",
+                    "city": city_en
+                }
 
         if language == "hi":
             response_text = "कृपया उस शहर का नाम बताइए जिसके मौसम की जानकारी चाहिए।"
@@ -1007,6 +1024,8 @@ def chat(request: ChatRequest):
             "source": "weather",
             "intent": "weather"
         }
+
+    
 
     # --------------------------------------
     # CROP RECOMMENDATION
@@ -1126,6 +1145,20 @@ def chat(request: ChatRequest):
             "redirect": "/crop-recommendation"
         }
 
+        # --------------------------------------
+    # YIELD / MANDI / DISEASE  (pehle model/live data, baad me general LLM)
+    # --------------------------------------
+
+    extra = handle_extra_intents(
+        message,
+        detect_language(message),
+        phrase_in_language,
+        ask_llama,
+    )
+
+    if extra:
+        return extra
+
     # --------------------------------------
     # DISEASE DETECTION / SOIL ANALYSIS (LLM fallback for now)
     # --------------------------------------
@@ -1233,21 +1266,60 @@ async def predict_yield(request: YieldPredictionRequest):
 # SPEECH TO TEXT (Groq Whisper)
 # ==========================================
 
-@app.post("/speech-to-text")
-async def speech_to_text(audio: UploadFile = File(...)):
+WHISPER_LANG = {
+    "hi": "hi", "mr": "mr", "bn": "bn", "pa": "pa", "gu": "gu",
+    "ta": "ta", "te": "te", "kn": "kn", "ml": "ml",
+    "bho": "hi",   # Bhojpuri -> Hindi
+    # "en": auto (Hinglish bolne wale log), "or": Whisper Odia support nahi karta -> auto
+}
 
+# Chhota vocabulary hint: Whisper ko sahi bhasha/script me likhne me madad karta hai
+WHISPER_PROMPT = {
+    "hi": "मौसम, तापमान, बारिश, फसल, नाइट्रोजन, फास्फोरस, पोटैशियम, जयपुर, दिल्ली, मुंबई",
+    "mr": "हवामान, तापमान, पाऊस, पीक, नायट्रोजन, फॉस्फरस, पोटॅशियम, पुणे, नाशिक, नागपूर, मुंबई",
+    "bn": "আবহাওয়া, তাপমাত্রা, বৃষ্টি, ফসল, কলকাতা, ঢাকা",
+    "pa": "ਮੌਸਮ, ਤਾਪਮਾਨ, ਮੀਂਹ, ਫਸਲ, ਲੁਧਿਆਣਾ, ਅੰਮ੍ਰਿਤਸਰ, ਚੰਡੀਗੜ੍ਹ",
+    "gu": "હવામાન, તાપમાન, વરસાદ, પાક, અમદાવાદ, સુરત, રાજકોટ",
+    "ta": "வானிலை, வெப்பநிலை, மழை, பயிர், சென்னை, கோயம்புத்தூர், மதுரை",
+    "te": "వాతావరణం, ఉష్ణోగ్రత, వర్షం, పంట, హైదరాబాద్, విజయవాడ",
+    "kn": "ಹವಾಮಾನ, ತಾಪಮಾನ, ಮಳೆ, ಬೆಳೆ, ಬೆಂಗಳೂರು, ಮೈಸೂರು",
+    "ml": "കാലാവസ്ഥ, താപനില, മഴ, വിള, തിരുവനന്തപുരം, കൊച്ചി",
+    "en": "weather, temperature, rain, crop, nitrogen, phosphorus, potassium, Jaipur, Pune, Mumbai",
+}
+
+
+@app.post("/speech-to-text")
+async def speech_to_text(
+    audio: UploadFile = File(...),
+    language: str = Form("en"),
+):
     try:
         audio_bytes = await audio.read()
 
-        transcription = groq_client.audio.transcriptions.create(
-            file=(audio.filename, audio_bytes),
-            model="whisper-large-v3-turbo",
+        params = dict(
+            file=(audio.filename or "audio.webm", audio_bytes),
+            model="whisper-large-v3",      # turbo se zyada accurate (Indic ke liye)
             response_format="verbose_json",
+            temperature=0,
         )
+
+        whisper_lang = WHISPER_LANG.get(language)
+        if whisper_lang:
+            params["language"] = whisper_lang      # auto-detect band => Marathi→Gujarati galti nahi
+
+        prompt_text = WHISPER_PROMPT.get(language)
+        if prompt_text:
+            params["prompt"] = prompt_text
+
+        print(f"STT request: ui_lang={language}, whisper_lang={whisper_lang}")
+
+        transcription = groq_client.audio.transcriptions.create(**params)
+
+        print("STT result:", transcription.text)
 
         return {
             "text": transcription.text,
-            "detected_language": transcription.language
+            "detected_language": whisper_lang or getattr(transcription, "language", None),
         }
 
     except Exception as e:

@@ -31,11 +31,18 @@ function Login() {
       "access_token",
       response.data.access_token
     );
+    localStorage.setItem("user_name", response.data.full_name || "");
 
     alert(response.data.message);
 
     // Redirect to Home page
-    window.location.href = "/";
+    /* window.location.href = "/"; */
+    let redirectTo = "/";
+      try {
+        redirectTo = sessionStorage.getItem("redirect_after_login") || "/";
+        sessionStorage.removeItem("redirect_after_login");
+      } catch { /* ignore */ }
+      window.location.href = redirectTo;
 
   } catch (error) {
     console.error("Login error:", error);
@@ -120,12 +127,9 @@ function Login() {
                     {t("login.password")}
                   </label>
 
-                  {/* <button
-                    type="button"
-                    className="forgot-password"
-                  >
+                  <Link to="/forgot-password" className="forgot-password">
                     {t("login.forgotPassword")}
-                  </button> */}
+                  </Link>
                 </div>
 
                 <div className="login-input-wrapper">

@@ -373,6 +373,49 @@
     }
   },
 
+  "diseaseDetectionPage": {
+    "badge": "AI-চালিত ফসলের স্বাস্থ্য",
+    "heroTitle": "ফসলের রোগ শনাক্ত করুন",
+    "heroHighlight": " AI দিয়ে দ্রুত",
+    "heroDescription": "ফসলের পাতার একটি পরিষ্কার ছবি আপলোড করুন। KrishiMitra AI সম্ভাব্য রোগ শনাক্ত করে সহায়ক পরামর্শ দেবে।",
+    "cardTitle": "পাতার রোগ শনাক্তকরণ",
+    "cardDescription": "আক্রান্ত পাতার একটি পরিষ্কার ছবি আপলোড করুন।",
+    "uploadTitle": "পাতার ছবি আপলোড করুন",
+    "dragDrop": "ছবি এখানে টেনে এনে ছাড়ুন অথবা",
+    "browseFiles": "ফাইল বেছে নিন",
+    "fileRequirements": "JPG, JPEG বা PNG • সর্বোচ্চ 10 MB",
+    "selectedImage": "নির্বাচিত পাতার ছবি",
+    "selectedImageAlt": "নির্বাচিত ফসলের পাতা",
+    "remove": "সরান",
+    "detectButton": "রোগ শনাক্ত করুন",
+    "analyzing": "ফসল বিশ্লেষণ করা হচ্ছে...",
+    "analyzingDescription": "AI পাতার ছবিতে সম্ভাব্য রোগ পরীক্ষা করছে।",
+    "scanningAlt": "পাতা পরীক্ষা হচ্ছে",
+    "analysisComplete": "AI বিশ্লেষণ সম্পূর্ণ",
+    "resultTitle": "শনাক্তকরণের ফলাফল",
+    "detected": "শনাক্ত হয়েছে: {{type}}",
+    "confidence": "নির্ভরযোগ্যতার মাত্রা",
+    "aboutResult": "এই ফলাফল সম্পর্কে",
+    "recommendedAction": "প্রস্তাবিত পদক্ষেপ",
+    "otherResults": "অন্যান্য সম্ভাব্য ফলাফল",
+    "scanAnother": "অন্য পাতা পরীক্ষা করুন",
+    "tips": {
+      "clearImageTitle": "পরিষ্কার ছবি",
+      "clearImageDescription": "আক্রান্ত পাতার পরিষ্কার ছবি তুলুন।",
+      "lightingTitle": "ভালো আলো",
+      "lightingDescription": "অন্ধকার বা ঝাপসা ছবি এড়িয়ে চলুন।",
+      "focusTitle": "পাতার দিকে মনোযোগ দিন",
+      "focusDescription": "আক্রান্ত পাতাটি স্পষ্টভাবে দেখা উচিত।"
+    },
+    "errors": {
+      "invalidImage": "অনুগ্রহ করে সঠিক ছবি ফাইল নির্বাচন করুন।",
+      "fileTooLarge": "ছবির আকার 10 MB-এর কম হতে হবে।",
+      "noImage": "প্রথমে ফসলের পাতার ছবি আপলোড করুন।",
+      "predictionFailed": "রোগ শনাক্ত করা যায়নি।",
+      "serverError": "রোগ শনাক্তকরণ সার্ভারের সঙ্গে সংযোগ করা যাচ্ছে না।"
+    }
+  },
+
   "insights": {
     "title": "কৃষকদের জন্য তথ্য ও পরামর্শ",
     "subtitle": "আপনার কৃষিকাজ উন্নত করতে সহায়ক তথ্য",
@@ -1026,6 +1069,33 @@
     "closingTitle": "বাস্তব কৃষি প্রয়োজনের কথা মাথায় রেখে তৈরি কৃষি সরঞ্জাম দেখুন।",
     "closingText": "এক জায়গায় কৃষি তথ্য দেখুন, আপনার খামারের ডেটা বুঝুন এবং সিদ্ধান্ত-সহায়ক সুবিধা ব্যবহার করুন।",
     "homeButton": "হোমে যান"
-  }
+  },
+
+   "forgotPasswordPage": {
+      "title": "পাসওয়ার্ড ভুলে গেছেন?",
+      "description": "আপনার নিবন্ধিত ইমেল দিন। আমরা আপনাকে পাসওয়ার্ড রিসেট লিঙ্ক পাঠাব।",
+      "email": "ইমেল",
+      "emailPlaceholder": "yourname@gmail.com",
+      "sending": "পাঠানো হচ্ছে...",
+      "sendResetLink": "রিসেট লিঙ্ক পাঠান",
+      "backToLogin": "লগইনে ফিরে যান",
+      "genericError": "কিছু একটা সমস্যা হয়েছে।",
+      "connectionError": "সার্ভারের সঙ্গে সংযোগ করা যাচ্ছে না।"
+    },
+    "resetPasswordPage": {
+      "title": "নতুন পাসওয়ার্ড সেট করুন",
+      "description": "অনুগ্রহ করে আপনার নতুন পাসওয়ার্ড লিখুন।",
+      "newPassword": "নতুন পাসওয়ার্ড",
+      "confirmPassword": "পাসওয়ার্ড নিশ্চিত করুন",
+      "saving": "সংরক্ষণ করা হচ্ছে...",
+      "resetButton": "পাসওয়ার্ড রিসেট করুন",
+      "passwordMismatch": "দুটি পাসওয়ার্ড মেলেনি।",
+      "invalidLink": "রিসেট লিঙ্কটি অবৈধ।",
+      "requestNewLink": "নতুন লিঙ্কের অনুরোধ করুন",
+      "resetError": "পাসওয়ার্ড রিসেট করা যায়নি।",
+      "successMessage": "আপনার পাসওয়ার্ড সফলভাবে রিসেট হয়েছে।",
+      "showPassword": "পাসওয়ার্ড দেখান",
+      "hidePassword": "পাসওয়ার্ড লুকান"
+    }
 
 }

@@ -374,6 +374,49 @@
     }
   },
 
+  "diseaseDetectionPage": {
+    "badge": "AI आधारित फसल स्वास्थ्य",
+    "heroTitle": "फसल के रोगों की पहचान करें",
+    "heroHighlight": " AI की मदद से जल्दी",
+    "heroDescription": "फसल की पत्ती की साफ तस्वीर अपलोड करें। KrishiMitra AI संभावित रोगों की पहचान करके उपयोगी जानकारी देगा।",
+    "cardTitle": "पत्ती के रोगों की पहचान",
+    "cardDescription": "प्रभावित फसल की पत्ती की साफ तस्वीर अपलोड करें।",
+    "uploadTitle": "पत्ती की तस्वीर अपलोड करें",
+    "dragDrop": "तस्वीर यहाँ खींचकर छोड़ें या",
+    "browseFiles": "फाइल चुनें",
+    "fileRequirements": "JPG, JPEG या PNG • अधिकतम 10 MB",
+    "selectedImage": "चुनी गई पत्ती की तस्वीर",
+    "selectedImageAlt": "चुनी गई फसल की पत्ती",
+    "remove": "हटाएँ",
+    "detectButton": "रोग की पहचान करें",
+    "analyzing": "फसल का विश्लेषण हो रहा है...",
+    "analyzingDescription": "AI पत्ती की तस्वीर में संभावित रोगों की जाँच कर रहा है।",
+    "scanningAlt": "पत्ती की जाँच हो रही है",
+    "analysisComplete": "AI विश्लेषण पूरा हुआ",
+    "resultTitle": "पहचान का परिणाम",
+    "detected": "पहचाना गया: {{type}}",
+    "confidence": "विश्वास स्तर",
+    "aboutResult": "इस परिणाम के बारे में",
+    "recommendedAction": "सुझाया गया उपाय",
+    "otherResults": "अन्य संभावित परिणाम",
+    "scanAnother": "दूसरी पत्ती की जाँच करें",
+    "tips": {
+      "clearImageTitle": "साफ तस्वीर",
+      "clearImageDescription": "प्रभावित पत्ती की साफ तस्वीर लें।",
+      "lightingTitle": "अच्छी रोशनी",
+      "lightingDescription": "अंधेरी या धुंधली तस्वीरों से बचें।",
+      "focusTitle": "पत्ती पर ध्यान दें",
+      "focusDescription": "प्रभावित पत्ती साफ दिखाई देनी चाहिए।"
+    },
+    "errors": {
+      "invalidImage": "कृपया सही इमेज फाइल चुनें।",
+      "fileTooLarge": "तस्वीर का आकार 10 MB से कम होना चाहिए।",
+      "noImage": "कृपया पहले फसल की पत्ती की तस्वीर अपलोड करें।",
+      "predictionFailed": "रोग की पहचान नहीं हो सकी।",
+      "serverError": "रोग पहचान सर्वर से कनेक्ट नहीं हो पा रहा है।"
+    }
+  },
+
   "insights": {
     "title": "किसानों के लिए सुझाव और जानकारी",
     "subtitle": "अपनी खेती को बेहतर बनाने के लिए उपयोगी जानकारी",
@@ -1038,6 +1081,33 @@
     "closingTitle": "वास्तविक कृषि आवश्यकताओं के अनुसार बनाए गए कृषि उपकरण देखें।",
     "closingText": "एक ही जगह पर कृषि जानकारी देखें, अपने खेत के डेटा को समझें और निर्णय-सहायता सुविधाओं का उपयोग करें।",
     "homeButton": "होम पर जाएँ"
-  }
+  },
+
+  "forgotPasswordPage": {
+      "title": "पासवर्ड भूल गए?",
+      "description": "अपना रजिस्टर्ड ईमेल दर्ज करें। हम आपको पासवर्ड रीसेट लिंक भेजेंगे।",
+      "email": "ईमेल",
+      "emailPlaceholder": "yourname@gmail.com",
+      "sending": "भेजा जा रहा है...",
+      "sendResetLink": "रीसेट लिंक भेजें",
+      "backToLogin": "लॉगिन पर वापस जाएँ",
+      "genericError": "कुछ गलत हो गया।",
+      "connectionError": "सर्वर से कनेक्ट नहीं हो पा रहा है।"
+    },
+    "resetPasswordPage": {
+      "title": "नया पासवर्ड सेट करें",
+      "description": "कृपया अपना नया पासवर्ड दर्ज करें।",
+      "newPassword": "नया पासवर्ड",
+      "confirmPassword": "पासवर्ड की पुष्टि करें",
+      "saving": "सेव किया जा रहा है...",
+      "resetButton": "पासवर्ड रीसेट करें",
+      "passwordMismatch": "दोनों पासवर्ड मेल नहीं खाते।",
+      "invalidLink": "रीसेट लिंक अमान्य है।",
+      "requestNewLink": "नया लिंक प्राप्त करें",
+      "resetError": "पासवर्ड रीसेट नहीं हो सका।",
+      "successMessage": "आपका पासवर्ड सफलतापूर्वक रीसेट हो गया है।",
+      "showPassword": "पासवर्ड दिखाएँ",
+      "hidePassword": "पासवर्ड छिपाएँ"
+    }
 
 }

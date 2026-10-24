@@ -40,6 +40,7 @@ function Home({ onOpenChat }) {
       description: t("services.diseaseDetection.description"),
       button: t("services.diseaseDetection.button"),
       className: "green-card",
+      path: "/disease-detection",
     },
     {
       icon: <img src={soilIcon} alt="SoilAnalysis" className="service-icon" />,

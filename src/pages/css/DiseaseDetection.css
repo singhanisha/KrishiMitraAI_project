@@ -1,0 +1,779 @@
+/* =========================================
+   DISEASE DETECTION PAGE
+========================================= */
+
+.disease-page {
+  min-height: 100vh;
+  background: #f5f8f3;
+  padding-bottom: 70px;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.disease-hero {
+  background:
+    linear-gradient(
+      135deg,
+      #174f2c,
+      #2f7d46
+    );
+
+  padding: 65px 20px;
+  color: white;
+}
+
+.disease-hero-content {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.disease-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 15px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  margin-bottom: 18px;
+}
+
+.disease-hero h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 800;
+}
+
+.disease-hero h1 span {
+  display: block;
+  color: #d7f5b5;
+}
+
+.disease-hero p {
+  max-width: 650px;
+  margin: 18px auto 0;
+
+  font-size: 17px;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.disease-content {
+  max-width: 900px;
+  margin: -35px auto 0;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.disease-card {
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 35px;
+
+  box-shadow:
+    0 15px 45px rgba(25, 70, 40, 0.12);
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 30px;
+}
+
+.header-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e7f5e7;
+
+  border-radius: 15px;
+
+  font-size: 25px;
+}
+
+.card-header h2 {
+  margin: 0;
+
+  color: #173d27;
+
+  font-size: 24px;
+}
+
+.card-header p {
+  margin: 5px 0 0;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   UPLOAD AREA
+========================================= */
+
+.upload-area {
+  border: 2px dashed #a8cdaa;
+
+  border-radius: 20px;
+
+  padding: 55px 20px;
+
+  text-align: center;
+
+  background: #f8fcf7;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover,
+.upload-area.dragging {
+  border-color: #3f914d;
+
+  background: #eef8ed;
+
+  transform: translateY(-2px);
+}
+
+.upload-icon {
+  width: 75px;
+  height: 75px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e2f3df;
+
+  border-radius: 50%;
+
+  font-size: 32px;
+}
+
+.upload-area h3 {
+  margin: 0;
+
+  color: #214b2d;
+
+  font-size: 20px;
+}
+
+.upload-area p {
+  margin: 10px 0;
+
+  color: #777;
+}
+
+.upload-area p span {
+  color: #2e7d32;
+  font-weight: 700;
+}
+
+.upload-area small {
+  color: #999;
+}
+
+
+/* =========================================
+   IMAGE PREVIEW
+========================================= */
+
+.preview-section {
+  background: #f7faf6;
+
+  border-radius: 18px;
+
+  padding: 20px;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 18px;
+}
+
+.preview-header h3 {
+  margin: 0;
+
+  color: #214b2d;
+}
+
+.preview-header p {
+  margin: 5px 0 0;
+
+  color: #888;
+
+  font-size: 13px;
+}
+
+.remove-button {
+  border: none;
+
+  background: #fff0f0;
+
+  color: #c0392b;
+
+  padding: 9px 13px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.preview-image-wrapper {
+  width: 100%;
+
+  max-height: 420px;
+
+  display: flex;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius: 15px;
+
+  background: #edf2ec;
+}
+
+.preview-image {
+  width: 100%;
+
+  max-height: 420px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+   DETECT BUTTON
+========================================= */
+
+.detect-button {
+  width: 100%;
+
+  margin-top: 25px;
+
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #2f7d3d;
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  transition: all 0.25s ease;
+}
+
+.detect-button:hover {
+  background: #21662f;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(47, 125, 61, 0.25);
+}
+
+.detect-button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+   SCANNING
+========================================= */
+
+.scanning-box {
+  margin-top: 25px;
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  background: #f4f9f3;
+
+  text-align: center;
+}
+
+.scanner {
+  position: relative;
+
+  width: 220px;
+  height: 170px;
+
+  margin: auto;
+
+  overflow: hidden;
+
+  border-radius: 15px;
+
+  background: #ddd;
+}
+
+.scanner img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.scanner-line {
+  position: absolute;
+
+  z-index: 2;
+
+  left: 0;
+  right: 0;
+
+  height: 3px;
+
+  background: #53b65d;
+
+  box-shadow:
+    0 0 12px #53b65d;
+
+  animation: scanning 1.8s infinite;
+}
+
+@keyframes scanning {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 100%;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+.scanning-text h3 {
+  color: #276735;
+
+  margin: 18px 0 5px;
+}
+
+.scanning-text p {
+  color: #777;
+
+  margin: 0 0 15px;
+}
+
+.progress-bar {
+  height: 7px;
+
+  background: #dce9da;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+
+  width: 80%;
+
+  background: #3f914d;
+
+  animation: progress 2s infinite;
+}
+
+@keyframes progress {
+  0% {
+    width: 10%;
+  }
+
+  100% {
+    width: 95%;
+  }
+}
+
+
+/* =========================================
+   RESULT
+========================================= */
+
+.result-section {
+  margin-top: 30px;
+
+  padding-top: 30px;
+
+  border-top: 1px solid #e6ece5;
+}
+
+.result-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+.success-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e1f4e3;
+
+  color: #2f7d3d;
+
+  font-size: 25px;
+
+  font-weight: 800;
+}
+
+.result-header span {
+  font-size: 11px;
+
+  color: #3d914a;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.result-header h2 {
+  margin: 3px 0 0;
+
+  color: #183d25;
+}
+
+
+/* =========================================
+   DISEASE RESULT
+========================================= */
+
+.disease-result {
+  margin-top: 25px;
+
+  padding: 22px;
+
+  border-radius: 15px;
+
+  background: #f3f8f1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.result-label {
+  font-size: 11px;
+
+  font-weight: 800;
+
+  color: #7b897c;
+
+  letter-spacing: 1px;
+}
+
+.disease-result h2 {
+  margin: 6px 0 0;
+
+  color: #276735;
+
+  font-size: 23px;
+}
+
+.confidence {
+  text-align: right;
+}
+
+.confidence p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 13px;
+}
+
+.confidence strong {
+  color: #2f7d3d;
+
+  font-size: 25px;
+}
+
+
+/* =========================================
+   CONFIDENCE BAR
+========================================= */
+
+.confidence-bar {
+  height: 9px;
+
+  margin-top: 15px;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  background: #dfe9dc;
+}
+
+.confidence-fill {
+  height: 100%;
+
+  border-radius: 10px;
+
+  background: #3f914d;
+}
+
+
+/* =========================================
+   TREATMENT
+========================================= */
+
+.treatment-card {
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 25px;
+
+  padding: 20px;
+
+  border-radius: 15px;
+
+  background: #fff9e9;
+
+  border: 1px solid #f2e2b5;
+}
+
+.treatment-icon {
+  font-size: 28px;
+}
+
+.treatment-card h3 {
+  margin: 0;
+
+  color: #5c4b1f;
+}
+
+.treatment-card p {
+  margin: 8px 0 0;
+
+  color: #6e654d;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   NEW SCAN
+========================================= */
+
+.new-scan-button {
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 13px;
+
+  border: 1px solid #2f7d3d;
+
+  border-radius: 10px;
+
+  background: white;
+
+  color: #2f7d3d;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.new-scan-button:hover {
+  background: #eef8ed;
+}
+
+
+/* =========================================
+   INFORMATION CARDS
+========================================= */
+
+.disease-info {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.info-item {
+  display: flex;
+
+  gap: 12px;
+
+  padding: 18px;
+
+  background: white;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 5px 20px rgba(25, 70, 40, 0.06);
+}
+
+.info-item > span {
+  font-size: 25px;
+}
+
+.info-item h4 {
+  margin: 0;
+
+  color: #285737;
+}
+
+.info-item p {
+  margin: 5px 0 0;
+
+  color: #777;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .disease-hero {
+    padding: 45px 20px;
+  }
+
+  .disease-hero h1 {
+    font-size: 32px;
+  }
+
+  .disease-card {
+    padding: 22px;
+  }
+
+  .disease-info {
+    grid-template-columns: 1fr;
+  }
+
+  .disease-result {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .confidence {
+    text-align: left;
+  }
+
+  .preview-header {
+    align-items: flex-start;
+
+    gap: 10px;
+
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .disease-content {
+    padding: 0 12px;
+  }
+
+  .disease-hero h1 {
+    font-size: 28px;
+  }
+
+  .disease-hero p {
+    font-size: 14px;
+  }
+
+  .upload-area {
+    padding: 40px 15px;
+  }
+
+  .card-header h2 {
+    font-size: 20px;
+  }
+}

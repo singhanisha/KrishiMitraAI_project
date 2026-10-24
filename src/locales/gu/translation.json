@@ -374,6 +374,49 @@
     }
   },
 
+  "diseaseDetectionPage": {
+    "badge": "AI આધારિત પાકનું સ્વાસ્થ્ય",
+    "heroTitle": "પાકના રોગો ઓળખો",
+    "heroHighlight": " AIની મદદથી ઝડપથી",
+    "heroDescription": "પાકના પાનનો સ્પષ્ટ ફોટો અપલોડ કરો. KrishiMitra AI સંભવિત રોગો ઓળખીને ઉપયોગી માર્ગદર્શન આપશે.",
+    "cardTitle": "પાનના રોગની ઓળખ",
+    "cardDescription": "અસરગ્રસ્ત પાનનો સ્પષ્ટ ફોટો અપલોડ કરો.",
+    "uploadTitle": "પાનનો ફોટો અપલોડ કરો",
+    "dragDrop": "ફોટો અહીં ખેંચીને મૂકો અથવા",
+    "browseFiles": "ફાઇલ પસંદ કરો",
+    "fileRequirements": "JPG, JPEG અથવા PNG • મહત્તમ 10 MB",
+    "selectedImage": "પસંદ કરેલો પાનનો ફોટો",
+    "selectedImageAlt": "પસંદ કરેલું પાકનું પાન",
+    "remove": "દૂર કરો",
+    "detectButton": "રોગ ઓળખો",
+    "analyzing": "પાકનું વિશ્લેષણ થઈ રહ્યું છે...",
+    "analyzingDescription": "AI પાનના ફોટામાં સંભવિત રોગોની તપાસ કરી રહ્યું છે.",
+    "scanningAlt": "પાનની તપાસ",
+    "analysisComplete": "AI વિશ્લેષણ પૂર્ણ",
+    "resultTitle": "ઓળખનું પરિણામ",
+    "detected": "ઓળખાયું: {{type}}",
+    "confidence": "વિશ્વાસનું સ્તર",
+    "aboutResult": "આ પરિણામ વિશે",
+    "recommendedAction": "ભલામણ કરેલું પગલું",
+    "otherResults": "અન્ય સંભવિત પરિણામો",
+    "scanAnother": "બીજું પાન તપાસો",
+    "tips": {
+      "clearImageTitle": "સ્પષ્ટ ફોટો",
+      "clearImageDescription": "અસરગ્રસ્ત પાનનો સ્પષ્ટ ફોટો લો.",
+      "lightingTitle": "સારો પ્રકાશ",
+      "lightingDescription": "અંધારા અથવા ધૂંધળા ફોટા ટાળો.",
+      "focusTitle": "પાન પર ધ્યાન આપો",
+      "focusDescription": "અસરગ્રસ્ત પાન સ્પષ્ટ દેખાવું જોઈએ."
+    },
+    "errors": {
+      "invalidImage": "કૃપા કરીને માન્ય ઇમેજ ફાઇલ પસંદ કરો.",
+      "fileTooLarge": "ફોટો 10 MB કરતાં નાનો હોવો જોઈએ.",
+      "noImage": "પહેલા પાકના પાનનો ફોટો અપલોડ કરો.",
+      "predictionFailed": "રોગ ઓળખી શકાયો નથી.",
+      "serverError": "રોગ ઓળખ સર્વર સાથે જોડાઈ શકાતું નથી."
+    }
+  },
+
   "insights": {
     "title": "ખેડૂતો માટે માહિતી અને ટિપ્સ",
     "subtitle": "તમારી ખેતી સુધારવા માટે ઉપયોગી માહિતી",
@@ -1031,6 +1074,33 @@
     "closingTitle": "વાસ્તવિક ખેતીની જરૂરિયાતોને ધ્યાનમાં રાખીને બનાવેલા કૃષિ સાધનો જુઓ.",
     "closingText": "એક જ જગ્યાએ કૃષિ માહિતી જુઓ, તમારા ખેતરના ડેટાને સમજો અને નિર્ણય-સહાય સુવિધાઓનો ઉપયોગ કરો.",
     "homeButton": "હોમ પર જાઓ"
-  }
+  },
+
+  "forgotPasswordPage": {
+      "title": "પાસવર્ડ ભૂલી ગયા?",
+      "description": "તમારું નોંધાયેલ ઇમેઇલ દાખલ કરો. અમે તમને પાસવર્ડ રીસેટ લિંક મોકલીશું.",
+      "email": "ઇમેઇલ",
+      "emailPlaceholder": "yourname@gmail.com",
+      "sending": "મોકલાઈ રહ્યું છે...",
+      "sendResetLink": "રીસેટ લિંક મોકલો",
+      "backToLogin": "લૉગિન પર પાછા જાઓ",
+      "genericError": "કંઈક ખોટું થયું.",
+      "connectionError": "સર્વર સાથે કનેક્ટ થઈ શક્યું નથી."
+    },
+    "resetPasswordPage": {
+      "title": "નવો પાસવર્ડ સેટ કરો",
+      "description": "કૃપા કરીને તમારો નવો પાસવર્ડ દાખલ કરો.",
+      "newPassword": "નવો પાસવર્ડ",
+      "confirmPassword": "પાસવર્ડની પુષ્ટિ કરો",
+      "saving": "સાચવી રહ્યા છીએ...",
+      "resetButton": "પાસવર્ડ રીસેટ કરો",
+      "passwordMismatch": "બંને પાસવર્ડ મેળ ખાતા નથી.",
+      "invalidLink": "રીસેટ લિંક અમાન્ય છે.",
+      "requestNewLink": "નવી લિંકની વિનંતી કરો",
+      "resetError": "પાસવર્ડ રીસેટ થઈ શક્યો નથી.",
+      "successMessage": "તમારો પાસવર્ડ સફળતાપૂર્વક રીસેટ થયો છે.",
+      "showPassword": "પાસવર્ડ બતાવો",
+      "hidePassword": "પાસવર્ડ છુપાવો"
+    }
 
 }

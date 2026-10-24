@@ -374,6 +374,49 @@
     }
   },
 
+  "diseaseDetectionPage": {
+    "badge": "AI-ਅਧਾਰਿਤ ਫਸਲ ਸਿਹਤ",
+    "heroTitle": "ਫਸਲ ਦੀਆਂ ਬਿਮਾਰੀਆਂ ਪਛਾਣੋ",
+    "heroHighlight": " AI ਨਾਲ ਜਲਦੀ",
+    "heroDescription": "ਫਸਲ ਦੇ ਪੱਤੇ ਦੀ ਸਾਫ਼ ਤਸਵੀਰ ਅੱਪਲੋਡ ਕਰੋ। KrishiMitra AI ਸੰਭਾਵਿਤ ਬਿਮਾਰੀਆਂ ਦੀ ਪਛਾਣ ਕਰਕੇ ਮਦਦਗਾਰ ਜਾਣਕਾਰੀ ਦੇਵੇਗਾ।",
+    "cardTitle": "ਪੱਤੇ ਦੀ ਬਿਮਾਰੀ ਦੀ ਪਛਾਣ",
+    "cardDescription": "ਪ੍ਰਭਾਵਿਤ ਪੱਤੇ ਦੀ ਸਾਫ਼ ਤਸਵੀਰ ਅੱਪਲੋਡ ਕਰੋ।",
+    "uploadTitle": "ਪੱਤੇ ਦੀ ਤਸਵੀਰ ਅੱਪਲੋਡ ਕਰੋ",
+    "dragDrop": "ਤਸਵੀਰ ਇੱਥੇ ਖਿੱਚ ਕੇ ਛੱਡੋ ਜਾਂ",
+    "browseFiles": "ਫਾਈਲ ਚੁਣੋ",
+    "fileRequirements": "JPG, JPEG ਜਾਂ PNG • ਵੱਧ ਤੋਂ ਵੱਧ 10 MB",
+    "selectedImage": "ਚੁਣਿਆ ਪੱਤਾ",
+    "selectedImageAlt": "ਚੁਣਿਆ ਫਸਲ ਦਾ ਪੱਤਾ",
+    "remove": "ਹਟਾਓ",
+    "detectButton": "ਬਿਮਾਰੀ ਪਛਾਣੋ",
+    "analyzing": "ਫਸਲ ਦੀ ਜਾਂਚ ਹੋ ਰਹੀ ਹੈ...",
+    "analyzingDescription": "AI ਪੱਤੇ ਦੀ ਤਸਵੀਰ ਵਿੱਚ ਸੰਭਾਵਿਤ ਬਿਮਾਰੀਆਂ ਦੀ ਜਾਂਚ ਕਰ ਰਿਹਾ ਹੈ।",
+    "scanningAlt": "ਪੱਤੇ ਦੀ ਜਾਂਚ",
+    "analysisComplete": "AI ਜਾਂਚ ਪੂਰੀ ਹੋਈ",
+    "resultTitle": "ਪਛਾਣ ਦਾ ਨਤੀਜਾ",
+    "detected": "ਪਛਾਣਿਆ ਗਿਆ: {{type}}",
+    "confidence": "ਭਰੋਸੇ ਦਾ ਪੱਧਰ",
+    "aboutResult": "ਇਸ ਨਤੀਜੇ ਬਾਰੇ",
+    "recommendedAction": "ਸੁਝਾਇਆ ਕਦਮ",
+    "otherResults": "ਹੋਰ ਸੰਭਾਵਿਤ ਨਤੀਜੇ",
+    "scanAnother": "ਹੋਰ ਪੱਤਾ ਜਾਂਚੋ",
+    "tips": {
+      "clearImageTitle": "ਸਾਫ਼ ਤਸਵੀਰ",
+      "clearImageDescription": "ਪ੍ਰਭਾਵਿਤ ਪੱਤੇ ਦੀ ਸਾਫ਼ ਤਸਵੀਰ ਲਓ।",
+      "lightingTitle": "ਚੰਗੀ ਰੌਸ਼ਨੀ",
+      "lightingDescription": "ਹਨੇਰੀ ਜਾਂ ਧੁੰਦਲੀ ਤਸਵੀਰ ਤੋਂ ਬਚੋ।",
+      "focusTitle": "ਪੱਤੇ 'ਤੇ ਧਿਆਨ ਦਿਓ",
+      "focusDescription": "ਪ੍ਰਭਾਵਿਤ ਪੱਤਾ ਸਾਫ਼ ਦਿਖਣਾ ਚਾਹੀਦਾ ਹੈ।"
+    },
+    "errors": {
+      "invalidImage": "ਕਿਰਪਾ ਕਰਕੇ ਸਹੀ ਇਮੇਜ ਫਾਈਲ ਚੁਣੋ।",
+      "fileTooLarge": "ਤਸਵੀਰ 10 MB ਤੋਂ ਘੱਟ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ।",
+      "noImage": "ਪਹਿਲਾਂ ਫਸਲ ਦੇ ਪੱਤੇ ਦੀ ਤਸਵੀਰ ਅੱਪਲੋਡ ਕਰੋ।",
+      "predictionFailed": "ਬਿਮਾਰੀ ਦੀ ਪਛਾਣ ਨਹੀਂ ਹੋ ਸਕੀ।",
+      "serverError": "ਬਿਮਾਰੀ ਪਛਾਣ ਸਰਵਰ ਨਾਲ ਜੁੜਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ।"
+    }
+  },
+
   "insights": {
     "title": "ਕਿਸਾਨਾਂ ਲਈ ਜਾਣਕਾਰੀ ਅਤੇ ਸੁਝਾਅ",
     "subtitle": "ਤੁਹਾਡੀ ਖੇਤੀ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਲਾਭਦਾਇਕ ਜਾਣਕਾਰੀ",
@@ -411,6 +454,8 @@
     "models": "ਬੁੱਧੀਮਾਨ ਮਾਡਲ",
     "platform": "ਇੱਕਜੁੱਟ ਪਲੇਟਫਾਰਮ"
   },
+
+
    "insightDetail": {
   "soil": {
     "badge": "ਮਿੱਟੀ ਦੀ ਸਿਹਤ",
@@ -1026,5 +1071,32 @@
     "closingTitle": "ਅਸਲ ਖੇਤੀਬਾੜੀ ਲੋੜਾਂ ਦੇ ਆਧਾਰ 'ਤੇ ਬਣੇ ਖੇਤੀਬਾੜੀ ਸਾਧਨ ਵੇਖੋ।",
     "closingText": "ਇੱਕੋ ਥਾਂ 'ਤੇ ਖੇਤੀਬਾੜੀ ਜਾਣਕਾਰੀ ਵੇਖੋ, ਆਪਣੇ ਖੇਤ ਦੇ ਡਾਟਾ ਨੂੰ ਸਮਝੋ ਅਤੇ ਫੈਸਲਾ-ਸਹਾਇਤਾ ਸਹੂਲਤਾਂ ਦੀ ਵਰਤੋਂ ਕਰੋ।",
     "homeButton": "ਹੋਮ 'ਤੇ ਜਾਓ"
-  }
+  },
+
+  "forgotPasswordPage": {
+      "title": "ਪਾਸਵਰਡ ਭੁੱਲ ਗਏ?",
+      "description": "ਆਪਣਾ ਰਜਿਸਟਰ ਕੀਤਾ ਈਮੇਲ ਦਿਓ। ਅਸੀਂ ਤੁਹਾਨੂੰ ਪਾਸਵਰਡ ਰੀਸੈੱਟ ਲਿੰਕ ਭੇਜਾਂਗੇ।",
+      "email": "ਈਮੇਲ",
+      "emailPlaceholder": "yourname@gmail.com",
+      "sending": "ਭੇਜਿਆ ਜਾ ਰਿਹਾ ਹੈ...",
+      "sendResetLink": "ਰੀਸੈੱਟ ਲਿੰਕ ਭੇਜੋ",
+      "backToLogin": "ਲੌਗਇਨ ਤੇ ਵਾਪਸ ਜਾਓ",
+      "genericError": "ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ।",
+      "connectionError": "ਸਰਵਰ ਨਾਲ ਕਨੈਕਟ ਨਹੀਂ ਹੋ ਸਕਿਆ।"
+    },
+    "resetPasswordPage": {
+      "title": "ਨਵਾਂ ਪਾਸਵਰਡ ਸੈੱਟ ਕਰੋ",
+      "description": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਨਵਾਂ ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ।",
+      "newPassword": "ਨਵਾਂ ਪਾਸਵਰਡ",
+      "confirmPassword": "ਪਾਸਵਰਡ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
+      "saving": "ਸੇਵ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
+      "resetButton": "ਪਾਸਵਰਡ ਰੀਸੈੱਟ ਕਰੋ",
+      "passwordMismatch": "ਦੋਵੇਂ ਪਾਸਵਰਡ ਮੇਲ ਨਹੀਂ ਖਾਂਦੇ।",
+      "invalidLink": "ਰੀਸੈੱਟ ਲਿੰਕ ਅਵੈਧ ਹੈ।",
+      "requestNewLink": "ਨਵਾਂ ਲਿੰਕ ਮੰਗੋ",
+      "resetError": "ਪਾਸਵਰਡ ਰੀਸੈੱਟ ਨਹੀਂ ਹੋ ਸਕਿਆ।",
+      "successMessage": "ਤੁਹਾਡਾ ਪਾਸਵਰਡ ਸਫਲਤਾਪੂਰਵਕ ਰੀਸੈੱਟ ਹੋ ਗਿਆ ਹੈ।",
+      "showPassword": "ਪਾਸਵਰਡ ਦਿਖਾਓ",
+      "hidePassword": "ਪਾਸਵਰਡ ਲੁਕਾਓ"
+    }
 }

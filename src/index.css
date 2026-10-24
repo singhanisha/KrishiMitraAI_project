@@ -247,6 +247,46 @@ a {
   box-shadow: 0 6px 15px rgba(36, 124, 53, 0.25);
 }
 
+.user-chip {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 14px;
+  border-radius: 24px;
+  background: #e8f4ea;
+  color: #1c642b;
+  font-size: 14px;
+  font-weight: 600;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 14px;
+  border: 1px solid #247c35;
+  border-radius: 24px;
+  background: transparent;
+  color: #247c35;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #247c35;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .user-chip { max-width: 90px; padding: 8px 10px; font-size: 13px; }
+  .logout-button { padding: 8px 10px; font-size: 13px; }
+}
+
 /* =========================
    PLACEHOLDER PAGES
 ========================= */

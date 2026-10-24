@@ -77,6 +77,7 @@ function Signup() {
       "access_token",
       response.data.access_token
     );
+    localStorage.setItem("user_name", response.data.full_name || "");
 
     alert(response.data.message);
 

@@ -374,6 +374,49 @@
     }
   },
 
+  "diseaseDetectionPage": {
+    "badge": "AI ଆଧାରିତ ଫସଲ ସ୍ୱାସ୍ଥ୍ୟ",
+    "heroTitle": "ଫସଲ ରୋଗ ଚିହ୍ନଟ କରନ୍ତୁ",
+    "heroHighlight": " AI ସହିତ ଶୀଘ୍ର",
+    "heroDescription": "ଫସଲ ପତ୍ରର ଏକ ସ୍ପଷ୍ଟ ଫଟୋ ଅପଲୋଡ୍ କରନ୍ତୁ। KrishiMitra AI ସମ୍ଭାବ୍ୟ ରୋଗ ଚିହ୍ନଟ କରି ଉପଯୋଗୀ ପରାମର୍ଶ ଦେବ।",
+    "cardTitle": "ପତ୍ର ରୋଗ ଚିହ୍ନଟ",
+    "cardDescription": "ପ୍ରଭାବିତ ପତ୍ରର ଏକ ସ୍ପଷ୍ଟ ଛବି ଅପଲୋଡ୍ କରନ୍ତୁ।",
+    "uploadTitle": "ପତ୍ରର ଛବି ଅପଲୋଡ୍ କରନ୍ତୁ",
+    "dragDrop": "ଛବିକୁ ଏଠାକୁ ଟାଣି ଛାଡ଼ନ୍ତୁ କିମ୍ବା",
+    "browseFiles": "ଫାଇଲ୍ ବାଛନ୍ତୁ",
+    "fileRequirements": "JPG, JPEG କିମ୍ବା PNG • ସର୍ବାଧିକ 10 MB",
+    "selectedImage": "ବାଛିଥିବା ପତ୍ରର ଛବି",
+    "selectedImageAlt": "ବାଛିଥିବା ଫସଲ ପତ୍ର",
+    "remove": "ହଟାନ୍ତୁ",
+    "detectButton": "ରୋଗ ଚିହ୍ନଟ କରନ୍ତୁ",
+    "analyzing": "ଫସଲର ବିଶ୍ଳେଷଣ ଚାଲିଛି...",
+    "analyzingDescription": "AI ପତ୍ର ଛବିରେ ସମ୍ଭାବ୍ୟ ରୋଗ ଯାଞ୍ଚ କରୁଛି।",
+    "scanningAlt": "ପତ୍ର ଯାଞ୍ଚ ଚାଲିଛି",
+    "analysisComplete": "AI ବିଶ୍ଳେଷଣ ସମ୍ପୂର୍ଣ୍ଣ",
+    "resultTitle": "ଚିହ୍ନଟ ଫଳାଫଳ",
+    "detected": "ଚିହ୍ନଟ ହୋଇଛି: {{type}}",
+    "confidence": "ବିଶ୍ୱାସ ସ୍ତର",
+    "aboutResult": "ଏହି ଫଳାଫଳ ବିଷୟରେ",
+    "recommendedAction": "ପରାମର୍ଶିତ ପଦକ୍ଷେପ",
+    "otherResults": "ଅନ୍ୟ ସମ୍ଭାବ୍ୟ ଫଳାଫଳ",
+    "scanAnother": "ଅନ୍ୟ ପତ୍ର ଯାଞ୍ଚ କରନ୍ତୁ",
+    "tips": {
+      "clearImageTitle": "ସ୍ପଷ୍ଟ ଛବି",
+      "clearImageDescription": "ପ୍ରଭାବିତ ପତ୍ରର ସ୍ପଷ୍ଟ ଫଟୋ ନିଅନ୍ତୁ।",
+      "lightingTitle": "ଭଲ ଆଲୋକ",
+      "lightingDescription": "ଅନ୍ଧାର କିମ୍ବା ଧୁସର ଛବି ଏଡ଼ାନ୍ତୁ।",
+      "focusTitle": "ପତ୍ର ଉପରେ ଧ୍ୟାନ ଦିଅନ୍ତୁ",
+      "focusDescription": "ପ୍ରଭାବିତ ପତ୍ର ସ୍ପଷ୍ଟ ଦେଖାଯିବା ଉଚିତ।"
+    },
+    "errors": {
+      "invalidImage": "ଦୟାକରି ଏକ ସଠିକ୍ ଇମେଜ୍ ଫାଇଲ୍ ବାଛନ୍ତୁ।",
+      "fileTooLarge": "ଛବିର ଆକାର 10 MB ଠାରୁ କମ୍ ହେବା ଉଚିତ।",
+      "noImage": "ପ୍ରଥମେ ଫସଲ ପତ୍ରର ଛବି ଅପଲୋଡ୍ କରନ୍ତୁ।",
+      "predictionFailed": "ରୋଗ ଚିହ୍ନଟ ହୋଇପାରିଲା ନାହିଁ।",
+      "serverError": "ରୋଗ ଚିହ୍ନଟ ସର୍ଭର ସହିତ ସଂଯୋଗ ହୋଇପାରୁନାହିଁ।"
+    }
+  },
+
   "insights": {
     "title": "କୃଷକଙ୍କ ପାଇଁ ସୂଚନା ଏବଂ ପରାମର୍ଶ",
     "subtitle": "ଆପଣଙ୍କ ଚାଷକୁ ଉନ୍ନତ କରିବା ପାଇଁ ଉପଯୋଗୀ ସୂଚନା",
@@ -874,7 +917,7 @@
       "button": "ହୋମ୍‌କୁ ଫେରନ୍ତୁ"
     }
   },
-   "servicePage": {
+   "servicesPage": {
     "badge": "ସ୍ମାର୍ଟ କୃଷି ସେବା",
     "title": "କୃଷି ପାଇଁ ଆବଶ୍ୟକ ଉପକରଣ, ଗୋଟିଏ ସ୍ଥାନରେ।",
     "lead": "KrishiMitra AI କୃଷି ସମ୍ବନ୍ଧୀୟ ନିଷ୍ପତ୍ତି ପାଇଁ ଆବଶ୍ୟକ ସ୍ମାର୍ଟ ଟୁଲଗୁଡ଼ିକୁ ଗୋଟିଏ ସରଳ ପ୍ଲାଟଫର୍ମରେ ଏକତ୍ର କରେ।",
@@ -1010,5 +1053,32 @@
     "closingTitle": "ପ୍ରକୃତ କୃଷି ଆବଶ୍ୟକତା ଆଧାରରେ ନିର୍ମିତ ଉପକରଣ ଅନ୍ୱେଷଣ କରନ୍ତୁ।",
     "closingText": "କୃଷି ସୂଚନା ଦେଖନ୍ତୁ, ଆପଣଙ୍କ କ୍ଷେତର ଡାଟା ବୁଝନ୍ତୁ ଏବଂ ଗୋଟିଏ ସ୍ଥାନରେ ନିଷ୍ପତ୍ତି ସହାୟତା ସୁବିଧା ବ୍ୟବହାର କରନ୍ତୁ।",
     "homeButton": "ହୋମକୁ ଯାଆନ୍ତୁ"
-  }
+  },
+
+  "forgotPasswordPage": {
+      "title": "ପାସୱାର୍ଡ ଭୁଲିଗଲେ କି?",
+      "description": "ଆପଣଙ୍କ ପଞ୍ଜୀକୃତ ଇମେଲ୍ ଦିଅନ୍ତୁ। ଆମେ ଆପଣଙ୍କୁ ପାସୱାର୍ଡ ପୁନଃସେଟ୍ ଲିଙ୍କ୍ ପଠାଇବୁ।",
+      "email": "ଇମେଲ୍",
+      "emailPlaceholder": "yourname@gmail.com",
+      "sending": "ପଠାଯାଉଛି...",
+      "sendResetLink": "ରିସେଟ୍ ଲିଙ୍କ୍ ପଠାନ୍ତୁ",
+      "backToLogin": "ଲଗଇନ୍‌କୁ ଫେରନ୍ତୁ",
+      "genericError": "କିଛି ଭୁଲ୍ ହୋଇଛି।",
+      "connectionError": "ସର୍ଭର ସହିତ ସଂଯୋଗ ହୋଇପାରିଲା ନାହିଁ।"
+    },
+    "resetPasswordPage": {
+      "title": "ନୂଆ ପାସୱାର୍ଡ ସେଟ୍ କରନ୍ତୁ",
+      "description": "ଦୟାକରି ଆପଣଙ୍କର ନୂଆ ପାସୱାର୍ଡ ଲେଖନ୍ତୁ।",
+      "newPassword": "ନୂଆ ପାସୱାର୍ଡ",
+      "confirmPassword": "ପାସୱାର୍ଡ ନିଶ୍ଚିତ କରନ୍ତୁ",
+      "saving": "ସେଭ୍ ହେଉଛି...",
+      "resetButton": "ପାସୱାର୍ଡ ରିସେଟ୍ କରନ୍ତୁ",
+      "passwordMismatch": "ଦୁଇଟି ପାସୱାର୍ଡ ମେଳ ଖାଉନାହିଁ।",
+      "invalidLink": "ରିସେଟ୍ ଲିଙ୍କ୍ ଅବୈଧ।",
+      "requestNewLink": "ନୂଆ ଲିଙ୍କ୍ ଅନୁରୋଧ କରନ୍ତୁ",
+      "resetError": "ପାସୱାର୍ଡ ରିସେଟ୍ ହୋଇପାରିଲା ନାହିଁ।",
+      "successMessage": "ଆପଣଙ୍କର ପାସୱାର୍ଡ ସଫଳତାର ସହ ରିସେଟ୍ ହୋଇଛି।",
+      "showPassword": "ପାସୱାର୍ଡ ଦେଖାନ୍ତୁ",
+      "hidePassword": "ପାସୱାର୍ଡ ଲୁଚାନ୍ତୁ"
+    }
 }

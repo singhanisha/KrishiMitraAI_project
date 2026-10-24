@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import {
   MessageCircle,
   Send,
@@ -9,6 +10,8 @@ import {
   Volume2,
   MicOff,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { isLoggedIn } from "../../utils/auth";
 
 import { getChatbotResponse } from "../../services/chatbotService";
 
@@ -17,6 +20,21 @@ import "./ChatBot.css";
 const API_URL = "http://127.0.0.1:8000";
 
 const ChatBot = ({ isOpen, setIsOpen }) => {
+
+    const navigate = useNavigate();
+
+  // Login ke bina chat nahi khulega -> login page
+  useEffect(() => {
+    if (isOpen && !isLoggedIn()) {
+      setIsOpen(false);
+      try {
+        sessionStorage.setItem("open_chat_after_login", "1");
+        sessionStorage.setItem("redirect_after_login", window.location.pathname);
+      } catch { /* ignore */ }
+      navigate("/login");
+    }
+  }, [isOpen]);
+   const { i18n } = useTranslation();
   const [messages, setMessages] = useState([
     {
       id: 1,
@@ -177,6 +195,7 @@ const ChatBot = ({ isOpen, setIsOpen }) => {
     try {
       const formData = new FormData();
       formData.append("audio", audioBlob, "recording.webm");
+      formData.append("language", i18n.language || "en");
 
       const response = await fetch(`${API_URL}/speech-to-text`, {
         method: "POST",
